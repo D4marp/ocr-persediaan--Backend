@@ -7,10 +7,24 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func NewMySQLPool(dsn string) (*sql.DB, error) {
-	if dsn == "" {
-		return nil, fmt.Errorf("DB_URL tidak diset")
+type Config struct {
+	Host     string
+	Port     string
+	User     string
+	Password string
+	Name     string
+}
+
+func NewMySQLPool(cfg Config) (*sql.DB, error) {
+	if cfg.Host == "" || cfg.User == "" || cfg.Name == "" {
+		return nil, fmt.Errorf("DB_HOST/DB_USER/DB_NAME tidak diset")
 	}
+	if cfg.Port == "" {
+		cfg.Port = "3306"
+	}
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true&loc=Local",
+		cfg.User, cfg.Password, cfg.Host, cfg.Port, cfg.Name)
+
 	pool, err := sql.Open("mysql", dsn)
 	if err != nil {
 		return nil, fmt.Errorf("gagal membuka koneksi database: %w", err)

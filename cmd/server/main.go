@@ -15,7 +15,13 @@ func main() {
 		log.Println("No .env file, using environment variables")
 	}
 
-	pool, err := db.NewMySQLPool(os.Getenv("DB_URL"))
+	pool, err := db.NewMySQLPool(db.Config{
+		Host:     os.Getenv("DB_HOST"),
+		Port:     os.Getenv("DB_PORT"),
+		User:     os.Getenv("DB_USER"),
+		Password: os.Getenv("DB_PASSWORD"),
+		Name:     os.Getenv("DB_NAME"),
+	})
 	if err != nil {
 		log.Fatalf("DB connection failed: %v", err)
 	}
