@@ -15,7 +15,7 @@ func main() {
 		log.Println("No .env file, using environment variables")
 	}
 
-	pool, err := db.NewPostgresPool(os.Getenv("DB_URL"))
+	pool, err := db.NewMySQLPool(os.Getenv("DB_URL"))
 	if err != nil {
 		log.Fatalf("DB connection failed: %v", err)
 	}

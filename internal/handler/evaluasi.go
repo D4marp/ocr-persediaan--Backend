@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"database/sql"
 	"encoding/json"
 	"io"
 	"net/http"
@@ -8,17 +9,16 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/ocr-persediaan/backend/pkg/processing"
 )
 
-func RegisterEvaluasiRoutes(r *gin.RouterGroup, pool *pgxpool.Pool) {
+func RegisterEvaluasiRoutes(r *gin.RouterGroup, pool *sql.DB) {
 	r.GET("/evaluasi/metrik", getMetrik(pool))
 	r.POST("/evaluasi/sus", submitSUS(pool))
 	r.GET("/evaluasi/sus/hasil", hasilSUS(pool))
 }
 
-func getMetrik(pool *pgxpool.Pool) gin.HandlerFunc {
+func getMetrik(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// Ambil metrik dari ML service
 		mlURL := processing.ServiceURL() + "/metrics"
@@ -36,17 +36,17 @@ func getMetrik(pool *pgxpool.Pool) gin.HandlerFunc {
 
 		// Statistik dari DB
 		var totalDokumen, totalDone, totalError int
-		pool.QueryRow(c, `SELECT COUNT(*) FROM dokumen`).Scan(&totalDokumen)
-		pool.QueryRow(c, `SELECT COUNT(*) FROM dokumen WHERE status='done'`).Scan(&totalDone)
-		pool.QueryRow(c, `SELECT COUNT(*) FROM dokumen WHERE status='error'`).Scan(&totalError)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM dokumen`).Scan(&totalDokumen)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM dokumen WHERE status='done'`).Scan(&totalDone)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM dokumen WHERE status='error'`).Scan(&totalError)
 
 		var avgOCRConf, avgProcessingMs float64
-		pool.QueryRow(c, `SELECT COALESCE(AVG(ocr_confidence),0) FROM dokumen WHERE status='done'`).Scan(&avgOCRConf)
-		pool.QueryRow(c, `SELECT COALESCE(AVG(processing_time_ms),0) FROM dokumen WHERE status='done'`).Scan(&avgProcessingMs)
+		pool.QueryRowContext(c, `SELECT COALESCE(AVG(ocr_confidence),0) FROM dokumen WHERE status='done'`).Scan(&avgOCRConf)
+		pool.QueryRowContext(c, `SELECT COALESCE(AVG(processing_time_ms),0) FROM dokumen WHERE status='done'`).Scan(&avgProcessingMs)
 
 		var totalTransaksi, terverifikasi int
-		pool.QueryRow(c, `SELECT COUNT(*) FROM transaksi`).Scan(&totalTransaksi)
-		pool.QueryRow(c, `SELECT COUNT(*) FROM transaksi WHERE is_verified=true`).Scan(&terverifikasi)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM transaksi`).Scan(&totalTransaksi)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM transaksi WHERE is_verified=true`).Scan(&terverifikasi)
 
 		c.JSON(200, gin.H{
 			"ocr": gin.H{
@@ -108,7 +108,7 @@ func kategoriSUS(s float64) string {
 	}
 }
 
-func submitSUS(pool *pgxpool.Pool) gin.HandlerFunc {
+func submitSUS(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var req SUSRequest
 		if err := c.ShouldBindJSON(&req); err != nil {
@@ -136,11 +136,11 @@ func submitSUS(pool *pgxpool.Pool) gin.HandlerFunc {
 		skor := hitungSUS(req)
 		kat := kategoriSUS(skor)
 
-		_, err := pool.Exec(c, `
+		_, err := pool.ExecContext(c, `
 			INSERT INTO sus_response
 				(id, responden_id, umkm_id, q1,q2,q3,q4,q5,q6,q7,q8,q9,q10, skor_sus, kategori)
-			VALUES (gen_random_uuid(),$1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14)
-		`, req.RespondenID, req.UMKMId,
+			VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+		`, uuid.New().String(), req.RespondenID, req.UMKMId,
 			req.Q1, req.Q2, req.Q3, req.Q4, req.Q5,
 			req.Q6, req.Q7, req.Q8, req.Q9, req.Q10,
 			skor, kat)
@@ -157,18 +157,18 @@ func submitSUS(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func hasilSUS(pool *pgxpool.Pool) gin.HandlerFunc {
+func hasilSUS(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var totalResponden int
 		var avgSkor, minSkor, maxSkor float64
-		pool.QueryRow(c, `
+		pool.QueryRowContext(c, `
 			SELECT COUNT(*), COALESCE(AVG(skor_sus),0),
 				COALESCE(MIN(skor_sus),0), COALESCE(MAX(skor_sus),0)
 			FROM sus_response
 		`).Scan(&totalResponden, &avgSkor, &minSkor, &maxSkor)
 
 		// Distribusi per kategori
-		rows, _ := pool.Query(c, `
+		rows, _ := pool.QueryContext(c, `
 			SELECT kategori, COUNT(*) FROM sus_response GROUP BY kategori ORDER BY COUNT(*) DESC
 		`)
 		defer rows.Close()

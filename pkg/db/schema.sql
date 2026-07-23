@@ -1,33 +1,33 @@
--- Schema OCR Persediaan UMKM
+-- Schema OCR Persediaan UMKM (MySQL)
 -- Jalankan otomatis via docker-entrypoint-initdb.d
-
-CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
 -- Dokumen transaksi yang diupload
 CREATE TABLE IF NOT EXISTS dokumen (
-  id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  umkm_id         TEXT NOT NULL DEFAULT 'default',
+  id              CHAR(36) PRIMARY KEY,
+  umkm_id         VARCHAR(64) NOT NULL DEFAULT 'default',
   filename        TEXT NOT NULL,
   file_path       TEXT NOT NULL,
-  status          TEXT NOT NULL DEFAULT 'pending'
+  status          VARCHAR(20) NOT NULL DEFAULT 'pending'
                   CHECK (status IN ('pending','processing','done','error')),
   ocr_text        TEXT,
   ocr_confidence  FLOAT,
   processing_time_ms FLOAT,
-  created_at      TIMESTAMPTZ DEFAULT NOW(),
-  updated_at      TIMESTAMPTZ DEFAULT NOW()
+  created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_dokumen_status (status),
+  INDEX idx_dokumen_umkm (umkm_id)
 );
 
 -- Transaksi hasil klasifikasi ML
 CREATE TABLE IF NOT EXISTS transaksi (
-  id                UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  dokumen_id        UUID REFERENCES dokumen(id) ON DELETE CASCADE,
-  umkm_id           TEXT NOT NULL DEFAULT 'default',
-  jenis             TEXT NOT NULL CHECK (jenis IN ('barang_masuk','barang_keluar')),
-  nama_produk       TEXT NOT NULL,
-  kode_barang       TEXT,
+  id                CHAR(36) PRIMARY KEY,
+  dokumen_id        CHAR(36),
+  umkm_id           VARCHAR(64) NOT NULL DEFAULT 'default',
+  jenis             VARCHAR(20) NOT NULL CHECK (jenis IN ('barang_masuk','barang_keluar')),
+  nama_produk       VARCHAR(255) NOT NULL,
+  kode_barang       VARCHAR(100),
   jumlah            DECIMAL(12,2),
-  satuan            TEXT,
+  satuan            VARCHAR(50),
   harga_satuan      DECIMAL(15,2),
   total             DECIMAL(15,2),
   tanggal_transaksi DATE,
@@ -35,27 +35,30 @@ CREATE TABLE IF NOT EXISTS transaksi (
   model_used        TEXT,
   is_verified       BOOLEAN DEFAULT FALSE,
   catatan           TEXT,
-  created_at        TIMESTAMPTZ DEFAULT NOW()
+  created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (dokumen_id) REFERENCES dokumen(id) ON DELETE CASCADE,
+  INDEX idx_transaksi_umkm (umkm_id),
+  INDEX idx_transaksi_produk (nama_produk)
 );
 
 -- Stok produk (dihitung dari transaksi)
 CREATE TABLE IF NOT EXISTS stok_produk (
-  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  umkm_id       TEXT NOT NULL DEFAULT 'default',
-  kode_barang   TEXT,
-  nama_produk   TEXT NOT NULL,
-  satuan        TEXT,
+  id            CHAR(36) PRIMARY KEY,
+  umkm_id       VARCHAR(64) NOT NULL DEFAULT 'default',
+  kode_barang   VARCHAR(100),
+  nama_produk   VARCHAR(255) NOT NULL,
+  satuan        VARCHAR(50),
   stok_awal     DECIMAL(12,2) DEFAULT 0,
   harga_pokok   DECIMAL(15,2),
-  updated_at    TIMESTAMPTZ DEFAULT NOW(),
-  UNIQUE(umkm_id, nama_produk)
+  updated_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uq_stok_umkm_produk (umkm_id, nama_produk)
 );
 
 -- Kuesioner SUS
 CREATE TABLE IF NOT EXISTS sus_response (
-  id            UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  responden_id  TEXT NOT NULL,
-  umkm_id       TEXT DEFAULT 'default',
+  id            CHAR(36) PRIMARY KEY,
+  responden_id  VARCHAR(64) NOT NULL,
+  umkm_id       VARCHAR(64) DEFAULT 'default',
   q1 SMALLINT NOT NULL CHECK (q1 BETWEEN 1 AND 5),
   q2 SMALLINT NOT NULL CHECK (q2 BETWEEN 1 AND 5),
   q3 SMALLINT NOT NULL CHECK (q3 BETWEEN 1 AND 5),
@@ -67,8 +70,9 @@ CREATE TABLE IF NOT EXISTS sus_response (
   q9 SMALLINT NOT NULL CHECK (q9 BETWEEN 1 AND 5),
   q10 SMALLINT NOT NULL CHECK (q10 BETWEEN 1 AND 5),
   skor_sus      FLOAT NOT NULL,
-  kategori      TEXT NOT NULL,
-  created_at    TIMESTAMPTZ DEFAULT NOW()
+  kategori      VARCHAR(20) NOT NULL,
+  created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  INDEX idx_sus_responden (responden_id)
 );
 
 -- View: laporan mutasi persediaan
@@ -88,10 +92,3 @@ FROM transaksi t
 LEFT JOIN stok_produk sp
   ON sp.nama_produk = t.nama_produk AND sp.umkm_id = t.umkm_id
 GROUP BY t.umkm_id, t.nama_produk, t.kode_barang, sp.satuan, t.satuan, sp.stok_awal;
-
--- Indexes
-CREATE INDEX IF NOT EXISTS idx_dokumen_status    ON dokumen(status);
-CREATE INDEX IF NOT EXISTS idx_dokumen_umkm      ON dokumen(umkm_id);
-CREATE INDEX IF NOT EXISTS idx_transaksi_umkm    ON transaksi(umkm_id);
-CREATE INDEX IF NOT EXISTS idx_transaksi_produk  ON transaksi(nama_produk);
-CREATE INDEX IF NOT EXISTS idx_sus_responden     ON sus_response(responden_id);

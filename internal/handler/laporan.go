@@ -1,28 +1,29 @@
 package handler
 
 import (
+	"database/sql"
+
 	"github.com/gin-gonic/gin"
-	"github.com/jackc/pgx/v5/pgxpool"
 )
 
-func RegisterLaporanRoutes(r *gin.RouterGroup, pool *pgxpool.Pool) {
+func RegisterLaporanRoutes(r *gin.RouterGroup, pool *sql.DB) {
 	r.GET("/laporan/mutasi", getMutasi(pool))
 	r.GET("/laporan/ringkasan", getRingkasan(pool))
 	r.GET("/laporan/kartu/:nama_produk", getKartuPersediaan(pool))
 }
 
-func getMutasi(pool *pgxpool.Pool) gin.HandlerFunc {
+func getMutasi(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		umkmID := c.Query("umkm_id")
 		if umkmID == "" {
 			umkmID = "default"
 		}
 
-		rows, err := pool.Query(c, `
+		rows, err := pool.QueryContext(c, `
 			SELECT nama_produk, kode_barang, satuan,
 				stok_awal, total_masuk, total_keluar, stok_akhir
 			FROM v_mutasi_persediaan
-			WHERE umkm_id=$1
+			WHERE umkm_id=?
 			ORDER BY nama_produk
 		`, umkmID)
 		if err != nil {
@@ -54,7 +55,7 @@ func getMutasi(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func getRingkasan(pool *pgxpool.Pool) gin.HandlerFunc {
+func getRingkasan(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		umkmID := c.Query("umkm_id")
 		if umkmID == "" {
@@ -63,12 +64,12 @@ func getRingkasan(pool *pgxpool.Pool) gin.HandlerFunc {
 
 		var totalDokumen, totalTransaksi int
 		var avgConf float64
-		pool.QueryRow(c, `SELECT COUNT(*) FROM dokumen WHERE umkm_id=$1 AND status='done'`, umkmID).Scan(&totalDokumen)
-		pool.QueryRow(c, `SELECT COUNT(*) FROM transaksi WHERE umkm_id=$1`, umkmID).Scan(&totalTransaksi)
-		pool.QueryRow(c, `SELECT COALESCE(AVG(ocr_confidence),0) FROM dokumen WHERE umkm_id=$1 AND status='done'`, umkmID).Scan(&avgConf)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM dokumen WHERE umkm_id=? AND status='done'`, umkmID).Scan(&totalDokumen)
+		pool.QueryRowContext(c, `SELECT COUNT(*) FROM transaksi WHERE umkm_id=?`, umkmID).Scan(&totalTransaksi)
+		pool.QueryRowContext(c, `SELECT COALESCE(AVG(ocr_confidence),0) FROM dokumen WHERE umkm_id=? AND status='done'`, umkmID).Scan(&avgConf)
 
 		var totalProduk int
-		pool.QueryRow(c, `SELECT COUNT(DISTINCT nama_produk) FROM transaksi WHERE umkm_id=$1`, umkmID).Scan(&totalProduk)
+		pool.QueryRowContext(c, `SELECT COUNT(DISTINCT nama_produk) FROM transaksi WHERE umkm_id=?`, umkmID).Scan(&totalProduk)
 
 		c.JSON(200, gin.H{
 			"total_dokumen":      totalDokumen,
@@ -79,7 +80,7 @@ func getRingkasan(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func getKartuPersediaan(pool *pgxpool.Pool) gin.HandlerFunc {
+func getKartuPersediaan(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		namaProduk := c.Param("nama_produk")
 		umkmID := c.Query("umkm_id")
@@ -87,12 +88,12 @@ func getKartuPersediaan(pool *pgxpool.Pool) gin.HandlerFunc {
 			umkmID = "default"
 		}
 
-		rows, err := pool.Query(c, `
+		rows, err := pool.QueryContext(c, `
 			SELECT t.id, t.jenis, t.jumlah, t.satuan, t.harga_satuan, t.total,
 				t.tanggal_transaksi, t.ml_confidence, t.is_verified, t.created_at
 			FROM transaksi t
-			WHERE t.nama_produk=$1 AND t.umkm_id=$2
-			ORDER BY COALESCE(t.tanggal_transaksi, t.created_at::date) ASC
+			WHERE t.nama_produk=? AND t.umkm_id=?
+			ORDER BY COALESCE(t.tanggal_transaksi, DATE(t.created_at)) ASC
 		`, namaProduk, umkmID)
 		if err != nil {
 			c.JSON(500, gin.H{"error": err.Error()})

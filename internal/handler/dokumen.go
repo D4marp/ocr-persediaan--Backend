@@ -2,6 +2,7 @@ package handler
 
 import (
 	"bytes"
+	"database/sql"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -15,7 +16,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/ocr-persediaan/backend/pkg/processing"
 )
 
@@ -39,14 +39,14 @@ type MLResponse struct {
 	ModelUsed    string  `json:"model_used"`
 }
 
-func RegisterDokumenRoutes(r *gin.RouterGroup, pool *pgxpool.Pool) {
+func RegisterDokumenRoutes(r *gin.RouterGroup, pool *sql.DB) {
 	r.POST("/dokumen/upload", uploadDokumen(pool))
 	r.GET("/dokumen", listDokumen(pool))
 	r.GET("/dokumen/:id", getDokumen(pool))
 	r.DELETE("/dokumen/:id", deleteDokumen(pool))
 }
 
-func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
+func uploadDokumen(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		file, header, err := c.Request.FormFile("file")
 		if err != nil {
@@ -84,9 +84,9 @@ func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 		}
 
 		// Insert DB dengan status processing
-		_, err = pool.Exec(c, `
+		_, err = pool.ExecContext(c, `
 			INSERT INTO dokumen (id, filename, file_path, status)
-			VALUES ($1, $2, $3, 'processing')
+			VALUES (?, ?, ?, 'processing')
 		`, docID, header.Filename, filePath)
 		if err != nil {
 			c.JSON(500, gin.H{"error": "Gagal menyimpan ke database"})
@@ -98,7 +98,7 @@ func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 		// Panggil OCR Service
 		ocrResult, err := callOCRService(fileBytes, filename)
 		if err != nil {
-			pool.Exec(c, `UPDATE dokumen SET status='error' WHERE id=$1`, docID)
+			pool.ExecContext(c, `UPDATE dokumen SET status='error' WHERE id=?`, docID)
 			c.JSON(502, gin.H{"error": fmt.Sprintf("OCR service error: %v", err)})
 			return
 		}
@@ -112,10 +112,10 @@ func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 		totalTime := time.Since(start).Milliseconds()
 
 		// Update dokumen
-		pool.Exec(c, `
+		pool.ExecContext(c, `
 			UPDATE dokumen
-			SET status='done', ocr_text=$1, ocr_confidence=$2, processing_time_ms=$3, updated_at=NOW()
-			WHERE id=$4
+			SET status='done', ocr_text=?, ocr_confidence=?, processing_time_ms=?, updated_at=NOW()
+			WHERE id=?
 		`, ocrResult.Text, ocrResult.Confidence, totalTime, docID)
 
 		// Simpan transaksi dari hasil ML
@@ -127,11 +127,11 @@ func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 			if namaProduk == "" {
 				namaProduk = "Produk Tidak Teridentifikasi"
 			}
-			pool.Exec(c, `
+			pool.ExecContext(c, `
 				INSERT INTO transaksi
 					(id, dokumen_id, jenis, nama_produk, kode_barang, jumlah, satuan,
 					 harga_satuan, total, ml_confidence, model_used)
-				VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+				VALUES (?,?,?,?,?,?,?,?,?,?,?)
 			`, id, docID, mlResult.Jenis, namaProduk, mlResult.KodeBarang,
 				mlResult.Jumlah, mlResult.Satuan, mlResult.HargaSatuan,
 				mlResult.Total, mlResult.MLConfidence, mlResult.ModelUsed)
@@ -147,19 +147,19 @@ func uploadDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func listDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
+func listDokumen(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		umkmID := c.Query("umkm_id")
 		query := `SELECT id, filename, status, ocr_confidence, processing_time_ms, created_at
 			FROM dokumen`
 		args := []interface{}{}
 		if umkmID != "" {
-			query += " WHERE umkm_id=$1"
+			query += " WHERE umkm_id=?"
 			args = append(args, umkmID)
 		}
 		query += " ORDER BY created_at DESC LIMIT 100"
 
-		rows, err := pool.Query(c, query, args...)
+		rows, err := pool.QueryContext(c, query, args...)
 		if err != nil {
 			c.JSON(500, gin.H{"error": err.Error()})
 			return
@@ -187,7 +187,7 @@ func listDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func getDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
+func getDokumen(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		id := c.Param("id")
 
@@ -199,9 +199,9 @@ func getDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 			OCRConfidence    *float64 `json:"ocr_confidence"`
 			ProcessingTimeMs *float64 `json:"processing_time_ms"`
 		}
-		err := pool.QueryRow(c, `
+		err := pool.QueryRowContext(c, `
 			SELECT id, filename, status, ocr_text, ocr_confidence, processing_time_ms
-			FROM dokumen WHERE id=$1
+			FROM dokumen WHERE id=?
 		`, id).Scan(&d.ID, &d.Filename, &d.Status, &d.OCRText, &d.OCRConfidence, &d.ProcessingTimeMs)
 		if err != nil {
 			c.JSON(404, gin.H{"error": "Dokumen tidak ditemukan"})
@@ -209,9 +209,9 @@ func getDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 		}
 
 		// Ambil transaksi terkait
-		rows, _ := pool.Query(c, `
+		rows, _ := pool.QueryContext(c, `
 			SELECT id, jenis, nama_produk, jumlah, satuan, total, ml_confidence, is_verified
-			FROM transaksi WHERE dokumen_id=$1
+			FROM transaksi WHERE dokumen_id=?
 		`, id)
 		defer rows.Close()
 
@@ -240,12 +240,12 @@ func getDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
 	}
 }
 
-func deleteDokumen(pool *pgxpool.Pool) gin.HandlerFunc {
+func deleteDokumen(pool *sql.DB) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		id := c.Param("id")
 		var filePath string
-		pool.QueryRow(c, `SELECT file_path FROM dokumen WHERE id=$1`, id).Scan(&filePath)
-		pool.Exec(c, `DELETE FROM dokumen WHERE id=$1`, id)
+		pool.QueryRowContext(c, `SELECT file_path FROM dokumen WHERE id=?`, id).Scan(&filePath)
+		pool.ExecContext(c, `DELETE FROM dokumen WHERE id=?`, id)
 		if filePath != "" {
 			os.Remove(filePath)
 		}
