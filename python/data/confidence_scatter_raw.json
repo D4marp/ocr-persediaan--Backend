@@ -1,0 +1,202 @@
+[
+  {
+    "format": "thermal_clean",
+    "confidence": 84.17431832284693,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 64.94573958904945,
+    "field_accuracy": 0.875
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 81.51357790428,
+    "field_accuracy": 0.8125
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 75.28459976669505,
+    "field_accuracy": 0.75
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 61.60313931282268,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 80.9117334620956,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 73.37808631073348,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 60.12457312051746,
+    "field_accuracy": 0.6875
+  },
+  {
+    "format": "handwritten",
+    "confidence": 61.157829851308115,
+    "field_accuracy": 0.125
+  },
+  {
+    "format": "handwritten",
+    "confidence": 72.86844729344729,
+    "field_accuracy": 0.4583333333333333
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 61.14885304659498,
+    "field_accuracy": 0.95
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 67.10221428571428,
+    "field_accuracy": 0.6283333333333333
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 65.15424606601867,
+    "field_accuracy": 0.8611111111111112
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 82.09348845598845,
+    "field_accuracy": 0.9166666666666666
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 74.07923816343406,
+    "field_accuracy": 0.7916666666666667
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 82.69116161616162,
+    "field_accuracy": 0.9166666666666666
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 76.37755010445228,
+    "field_accuracy": 0.875
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 65.1603228410008,
+    "field_accuracy": 0.9125
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 69.85060611060865,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 75.06296473856096,
+    "field_accuracy": 0.8888888888888888
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 58.56188658669575,
+    "field_accuracy": 0.75
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 76.8515919158361,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 54.56211301661116,
+    "field_accuracy": 0.6875
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 76.76470501085043,
+    "field_accuracy": 0.9375
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 63.16147818350642,
+    "field_accuracy": 0.9466666666666667
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 77.12964793826862,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 72.85191474936576,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 63.693294411575074,
+    "field_accuracy": 0.625
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 64.57618986545496,
+    "field_accuracy": 0.81875
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 64.80604314862498,
+    "field_accuracy": 0.9375
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 65.5631737958616,
+    "field_accuracy": 0.9166666666666666
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 57.38172821657309,
+    "field_accuracy": 0.9583333333333334
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 57.21995432514517,
+    "field_accuracy": 1.0
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 78.34676215424483,
+    "field_accuracy": 0.9375
+  },
+  {
+    "format": "dot_matrix",
+    "confidence": 69.7203087310672,
+    "field_accuracy": 0.9375
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 66.576231927492,
+    "field_accuracy": 0.9375
+  },
+  {
+    "format": "handwritten",
+    "confidence": 64.69533898529536,
+    "field_accuracy": 0.3333333333333333
+  },
+  {
+    "format": "handwritten",
+    "confidence": 65.40407268170426,
+    "field_accuracy": 0.41666666666666663
+  },
+  {
+    "format": "thermal_clean",
+    "confidence": 78.3555792034053,
+    "field_accuracy": 0.25
+  },
+  {
+    "format": "handwritten",
+    "confidence": 61.115644224196856,
+    "field_accuracy": 0.3333333333333333
+  }
+]

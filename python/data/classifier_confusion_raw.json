@@ -1,0 +1,166 @@
+{
+  "link02": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link03": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link04": {
+    "true": "thermal_clean",
+    "pred": "dot_matrix"
+  },
+  "link05": {
+    "true": "dot_matrix",
+    "pred": "thermal_clean"
+  },
+  "link06": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link07": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link08": {
+    "true": "dot_matrix",
+    "pred": "thermal_clean"
+  },
+  "link09": {
+    "true": "dot_matrix",
+    "pred": "thermal_clean"
+  },
+  "link10": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  },
+  "link11": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  },
+  "link12": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  },
+  "link13": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link14": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link15": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link16": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link17": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link18": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link19": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link20": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link21": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link22": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link23": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link24": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link25": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link26": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link27": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link28": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link29": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link30": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link31": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link32": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link33": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link34": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link35": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link36": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link37": {
+    "true": "dot_matrix",
+    "pred": "dot_matrix"
+  },
+  "link38": {
+    "true": "thermal_clean",
+    "pred": "dot_matrix"
+  },
+  "link39": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  },
+  "link40": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  },
+  "link41": {
+    "true": "thermal_clean",
+    "pred": "thermal_clean"
+  },
+  "link42": {
+    "true": "handwritten",
+    "pred": "handwritten"
+  }
+}

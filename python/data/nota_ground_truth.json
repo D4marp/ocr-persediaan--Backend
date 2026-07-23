@@ -1,0 +1,995 @@
+{
+  "pembelian": {
+    "records": [
+      {
+        "tanggal": "2026-04-04",
+        "no_nota": "Indomaret",
+        "toko_supplier": "Melayu Darat",
+        "items": [
+          {
+            "nama_barang": "Angsuran BAF (Fitri Halidah)",
+            "qty": "1.0",
+            "harga_satuan": "924.1",
+            "total_harga": "924.1"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "SI-TD-2026-04-00854",
+        "toko_supplier": "Titi Disk Stationery",
+        "items": [
+          {
+            "nama_barang": "Plastik Undangan 10.5x25",
+            "qty": "2.0",
+            "harga_satuan": "8.0",
+            "total_harga": "16.0"
+          },
+          {
+            "nama_barang": "Plastik Undangan 9x25",
+            "qty": "3.0",
+            "harga_satuan": "7.5",
+            "total_harga": "22.5"
+          },
+          {
+            "nama_barang": "Lakban ABC Warna Silver",
+            "qty": "3.0",
+            "harga_satuan": "8.0",
+            "total_harga": "24.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "TRANS-001-193412001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Dragonpack Cases Glassine Black Rol 5",
+            "qty": "4.0",
+            "harga_satuan": "19.49",
+            "total_harga": "77.96"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "YL-226005P5259",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Pls OPP 13x13",
+            "qty": "3.0",
+            "harga_satuan": "5.555",
+            "total_harga": "16.665"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-08",
+        "no_nota": "UMRRA-26.04.08-20",
+        "toko_supplier": "UMRRA",
+        "items": [
+          {
+            "nama_barang": "OPP 13x13 Daun Mas",
+            "qty": "1.0",
+            "harga_satuan": "54.0",
+            "total_harga": "54.0"
+          },
+          {
+            "nama_barang": "TW Klir 200",
+            "qty": "3.0",
+            "harga_satuan": "20.5",
+            "total_harga": "61.5"
+          },
+          {
+            "nama_barang": "OPP 20x30 Daun Mas",
+            "qty": "2.0",
+            "harga_satuan": "18.5",
+            "total_harga": "37.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-09",
+        "no_nota": "YL-22600954957",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Kertas Nasi Motif Bakery 25X27,5",
+            "qty": "1.0",
+            "harga_satuan": "23.0",
+            "total_harga": "23.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-12",
+        "no_nota": "Nota No. 60",
+        "toko_supplier": "Toko Berkah Mandiri",
+        "items": [
+          {
+            "nama_barang": "Plastik Pex 25 & Pex 30",
+            "qty": "3.0",
+            "harga_satuan": "15.0",
+            "total_harga": "45.0"
+          },
+          {
+            "nama_barang": "Plastik Pex 25 & Pex 30",
+            "qty": "1.0",
+            "harga_satuan": "30.0",
+            "total_harga": "30.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-16",
+        "no_nota": "09943/KSR/UTM/0426",
+        "toko_supplier": "Harum Berkah",
+        "items": [
+          {
+            "nama_barang": "Bawang PEX 25 Bening",
+            "qty": "3.0",
+            "harga_satuan": "15.0",
+            "total_harga": "45.0"
+          },
+          {
+            "nama_barang": "Kharisma 15 Biru",
+            "qty": "1.0",
+            "harga_satuan": "4.5",
+            "total_harga": "4.5"
+          },
+          {
+            "nama_barang": "Sarung Tangan Be Glove",
+            "qty": "1.0",
+            "harga_satuan": "11.0",
+            "total_harga": "11.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-18",
+        "no_nota": "Nota No. 4",
+        "toko_supplier": "Toko Berkah Mandiri",
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 30",
+            "qty": "3.0",
+            "harga_satuan": "30.0",
+            "total_harga": "90.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-18",
+        "no_nota": "Indomaret",
+        "toko_supplier": "Melayu Darat",
+        "items": [
+          {
+            "nama_barang": "Ultra Susu UHT Plain 1L (Konsumsi)",
+            "qty": "1.0",
+            "harga_satuan": "22.0",
+            "total_harga": "22.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-20",
+        "no_nota": "Struk 370243",
+        "toko_supplier": "Toko Satu",
+        "items": [
+          {
+            "nama_barang": "OPP 20x30 x 1.3 x 21 Mic",
+            "qty": "5.0",
+            "harga_satuan": "18.0",
+            "total_harga": "90.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-21",
+        "no_nota": "Nota No. 81",
+        "toko_supplier": "Toko Berkah Mandiri",
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 25",
+            "qty": "5.0",
+            "harga_satuan": "15.0",
+            "total_harga": "75.0"
+          },
+          {
+            "nama_barang": "Plastik PEX 20",
+            "qty": "2.0",
+            "harga_satuan": "15.0",
+            "total_harga": "30.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-22",
+        "no_nota": "YL-22602233135",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Toples PET 500ML - Cap Natural",
+            "qty": "25.0",
+            "harga_satuan": "3.8",
+            "total_harga": "95.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-24",
+        "no_nota": "YL-226024M2412",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Wool Brush #3 Kayu Besar",
+            "qty": "1.0",
+            "harga_satuan": "25.0",
+            "total_harga": "25.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-27",
+        "no_nota": "Nota No. 93",
+        "toko_supplier": "Toko Berkah Mandiri",
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 25",
+            "qty": "5.0",
+            "harga_satuan": "15.0",
+            "total_harga": "75.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-28",
+        "no_nota": "YL-226D2813736",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Kertas Nasi Motif Cake 25x27.5 CH Food",
+            "qty": "1.0",
+            "harga_satuan": "23.0",
+            "total_harga": "23.0"
+          }
+        ]
+      }
+    ],
+    "total_records": 16,
+    "total_items": 24,
+    "sumber_links": [
+      "https://mail.google.com/mail/u/0/#all/19efefbafda0b1c3",
+      "https://drive.google.com/file/d/19licmlw-dEGt5EASY9JSfsC8ESZU7dPO/view?usp=drive_web",
+      "https://drive.google.com/file/d/1oQjz9409NJr6ldqPdK3zQ7cAIENKQMPU/view?usp=drive_web",
+      "https://drive.google.com/file/d/1Pp6zt0aqtqwDFJe6lWcZHWi0Vu6be2Vn/view?usp=drive_web",
+      "https://drive.google.com/file/d/1UexxJciNvfTC-PRKsMiz-xxRJ08t-F9D/view?usp=drive_web",
+      "https://drive.google.com/file/d/1SmVv2jFCy-yIFMzxujF7yhdwXwkGqMN1/view?usp=drive_web",
+      "https://drive.google.com/file/d/1wYw2bByZbhF6AoMLqRSUGv2PdfACZLPT/view?usp=drive_web",
+      "https://drive.google.com/file/d/1YWERaIvRyFN_nxRbplnYHlIYNmevGVAm/view?usp=drive_web",
+      "https://drive.google.com/file/d/1h44d19Zi7DScFkiKankzBWEq7_eUdy5S/view?usp=drive_web",
+      "https://drive.google.com/file/d/1VcQHK5I9nr5axHhxch805Fv-DNqsnHNT/view?usp=drive_web",
+      "https://drive.google.com/file/d/1ug-Jt30Qi9-EMkw2uc_up00y_r8Aj9OY/view?usp=drive_web",
+      "https://drive.google.com/file/d/1wdMOncHOmQf6JWI7GYOFLkuESR1Lrntp/view?usp=drive_web",
+      "https://drive.google.com/file/d/1G_PQHljOgD5Qp5bZq0mRgMH0qIJmtz_y/view?usp=drive_web",
+      "https://drive.google.com/file/d/1atrZ9_XVfPWv4DQ4YxINp8yZ8keoLPCz/view?usp=drive_web",
+      "https://drive.google.com/file/d/17nqr0WU-OpCLyblwnrlPd59inMqHPLQq/view?usp=drive_web",
+      "https://drive.google.com/file/d/1uCWyH7ilQ5QfuDzIhoVIW16f69VqyRM7/view?usp=drive_web",
+      "https://drive.google.com/file/d/15fLCC3P3R8zs7YIuYgMCJ7XbgmXFTWmj/view?usp=drive_web",
+      "https://drive.google.com/file/d/1zVa9JsdK83-_RRZlMDKGSM3-fjoBK8RQ/view?usp=drive_web",
+      "https://drive.google.com/file/d/1LZ_OEkx4Dx81t7aLvPRwE38iyGkp8ZPI/view?usp=drive_web",
+      "https://drive.google.com/file/d/1RFV9P0chjsNYJ-skRA91gYLAqNPAekj8/view?usp=drive_web",
+      "https://drive.google.com/file/d/1FznqvBXKbYpfurIAneZQtaO2JNwAfhuo/view?usp=drive_web",
+      "https://drive.google.com/file/d/14K53tNSH6LF5qStbEJMrSJKjHVoFsJuL/view?usp=drive_web",
+      "https://drive.google.com/file/d/1n_eArFkrj-XGI77AlFP15oAB1dsIOBND/view?usp=drive_web",
+      "https://drive.google.com/file/d/1XR_Ou0WZxf5f1A3hKfbacIGxg2VSDjMk/view?usp=drive_web",
+      "https://drive.google.com/file/d/1jHj4Ylq0oNVQUci_3ewQ0uNrNumg_5jW/view?usp=drive_web",
+      "https://drive.google.com/file/d/1-d2IdSRVXGwz4j5yApOneD5XmUaB9TLS/view?usp=drive_web",
+      "https://drive.google.com/file/d/1UBf7Rh4tR_4LScxB_qcOQZC28NH-zoMi/view?usp=drive_web",
+      "https://drive.google.com/file/d/1kZW-O9kP2TzO_CBQjI2S6rFuogmOWXmi/view?usp=drive_web",
+      "https://drive.google.com/file/d/1t8CGD75EWVSypiRp3jsv-bCXB7InMlGN/view?usp=drive_web",
+      "https://drive.google.com/file/d/1nazJNcHpgYRNF77AJ4mrnew7zzwCK6rG/view?usp=drive_web",
+      "https://drive.google.com/file/d/1JxqZMYBwu8UMVLemv-v90HlvGwoY1sVr/view?usp=drive_web",
+      "https://drive.google.com/file/d/1sDGG4f1LbsGsrtObs_r4r4cs0y_ENPFu/view?usp=drive_web",
+      "https://drive.google.com/file/d/19P-btQBtpQG8DywJH9_6x_FIimZ-OiiK/view?usp=drive_web",
+      "https://drive.google.com/file/d/1t5-N6zOMNvm2PN-LkaBr41o0J3blq3zZ/view?usp=drive_web",
+      "https://drive.google.com/file/d/1mvZhf_2Osl9Nh1U9Nt2EsXPF3QA8DXGz/view?usp=drive_web",
+      "https://drive.google.com/file/d/1PCOGGQ3_QxQ3c3lpEQA5piNrJ5oaUMfd/view?usp=drive_web",
+      "https://drive.google.com/file/d/1hFMk8fDM_XzrbqTrWQCGeBRlprp1xbM2/view?usp=drive_web",
+      "https://drive.google.com/file/d/1oz5sRGP9rBcP3SUpHQNkRVGnMobosVI_/view?usp=drive_web",
+      "https://drive.google.com/file/d/1qUfAe141V9I4KxHYxCt6xkiKk35amWoY/view?usp=drive_web",
+      "https://drive.google.com/file/d/1juDjclTML--QRPjj2Vual4bW8UqeOzS2/view?usp=drive_web",
+      "https://drive.google.com/file/d/1jF0q2R5_Ep3jLcsN2anaPysD0HdtP6qM/view?usp=drive_web",
+      "https://drive.google.com/file/d/1aeIuOfoTH1Tcd6-WE3e4zW1ztzId9TGR/view?usp=drive_web"
+    ]
+  },
+  "produksi": {
+    "records": [
+      {
+        "tanggal": "2026-04-02",
+        "no_nota": "YL-22600235047",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Wijen Putih \"Number 1\" 0.5 KG",
+            "qty": "1.0",
+            "harga_satuan": "29.0",
+            "total_harga": "29.0"
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "1.0",
+            "harga_satuan": "33.99",
+            "total_harga": "33.99"
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "qty": "1.0",
+            "harga_satuan": "102.8",
+            "total_harga": "102.8"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-04",
+        "no_nota": "TRANS001-092333001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Wincheez Keju Kotak 2 KG",
+            "qty": "1.0",
+            "harga_satuan": "91.99",
+            "total_harga": "91.99"
+          },
+          {
+            "nama_barang": "Maizenaku Corn Starch 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "21.49",
+            "total_harga": "21.49"
+          },
+          {
+            "nama_barang": "Kacang Cacah Butiran Besar",
+            "qty": "1.0",
+            "harga_satuan": "73.49",
+            "total_harga": "73.49"
+          },
+          {
+            "nama_barang": "Le Patta Vanila Bks 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "40.49",
+            "total_harga": "40.49"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-04",
+        "no_nota": "TRANS002-102646001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Wincheez Keju Bks 250 GR",
+            "qty": "8.0",
+            "harga_satuan": "12.83",
+            "total_harga": "103.12"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "TRANS-001-193412001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Trimit Colour (Spikel Pasir) 50 KG (Ons)",
+            "qty": "46144.0",
+            "harga_satuan": "9.99",
+            "total_harga": "24.975"
+          },
+          {
+            "nama_barang": "Collins Dip Glaze Milky Pail 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "36.49",
+            "total_harga": "36.49"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "YL-226005P5259",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Cocoa Roman 35GR x 10 Pack",
+            "qty": "1.0",
+            "harga_satuan": "30.69",
+            "total_harga": "30.69"
+          },
+          {
+            "nama_barang": "Roma Arden Yogurt Straw 30GR",
+            "qty": "1.0",
+            "harga_satuan": "2.0",
+            "total_harga": "2.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-05",
+        "no_nota": "YL-12600552256",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Jay's Oregano Leaves 250GR",
+            "qty": "1.0",
+            "harga_satuan": "20.2",
+            "total_harga": "20.2"
+          },
+          {
+            "nama_barang": "Kings Red Velvet Crumb Halus 250GR",
+            "qty": "1.0",
+            "harga_satuan": "13.8",
+            "total_harga": "13.8"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-07",
+        "no_nota": "TRANS002-104754001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Boncoco Cokelat Isian Roti Pasta 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "33.59",
+            "total_harga": "33.59"
+          },
+          {
+            "nama_barang": "Shine Road Non Dairy Cream Topping 1L",
+            "qty": "1.0",
+            "harga_satuan": "57.99",
+            "total_harga": "57.99"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-08",
+        "no_nota": "YL-226DOBN5947",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.69",
+            "total_harga": "34.69"
+          },
+          {
+            "nama_barang": "Collins Glaze Taro 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.5",
+            "total_harga": "34.5"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-08",
+        "no_nota": "TRANS-002-150754001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Shine Road Non Dairy Cream Topping 1L",
+            "qty": "1.0",
+            "harga_satuan": "57.99",
+            "total_harga": "57.99"
+          },
+          {
+            "nama_barang": "Boncoco Cokelat Isian Roti Pasta 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "33.59",
+            "total_harga": "33.59"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-09",
+        "no_nota": "YL-22600954957",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Matcha 1KG",
+            "qty": "1.0",
+            "harga_satuan": "42.2",
+            "total_harga": "42.2"
+          },
+          {
+            "nama_barang": "Collins Glaze Milk 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.5",
+            "total_harga": "34.5"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-10",
+        "no_nota": "Z260401849",
+        "toko_supplier": "PT. Selamat Sejahtera Sejati",
+        "items": [
+          {
+            "nama_barang": "Athena Bread Improver LS 5 KG",
+            "qty": "2.0",
+            "harga_satuan": "499.5",
+            "total_harga": "999.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-11",
+        "no_nota": "YL-22601115002",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.69",
+            "total_harga": "34.69"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-11",
+        "no_nota": "TRANS001-134627001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Almonesia Almond Slice Bks 250 GR",
+            "qty": "1.0",
+            "harga_satuan": "56.99",
+            "total_harga": "56.99"
+          },
+          {
+            "nama_barang": "Kacang Cacah Butiran Besar",
+            "qty": "1.0",
+            "harga_satuan": "73.49",
+            "total_harga": "73.49"
+          },
+          {
+            "nama_barang": "Lagie Choco Chips 1/2 Bulat 3 KG (Ons)",
+            "qty": "5.0",
+            "harga_satuan": "12.398",
+            "total_harga": "61.99"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-13",
+        "no_nota": "YL-12601333608",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Kulit Gandum 1KG",
+            "qty": "1.0",
+            "harga_satuan": "22.5",
+            "total_harga": "22.5"
+          },
+          {
+            "nama_barang": "Collins Glaze Strawberry 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.5",
+            "total_harga": "34.5"
+          },
+          {
+            "nama_barang": "Kings Red Velvet Crumb Halus 250GR",
+            "qty": "1.0",
+            "harga_satuan": "13.8",
+            "total_harga": "13.8"
+          },
+          {
+            "nama_barang": "Collins Glaze Matcha 1KG",
+            "qty": "1.0",
+            "harga_satuan": "42.2",
+            "total_harga": "42.2"
+          },
+          {
+            "nama_barang": "Collins Glaze Milk 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.5",
+            "total_harga": "34.5"
+          },
+          {
+            "nama_barang": "Donut Dusting Vanila",
+            "qty": "6.0",
+            "harga_satuan": "25.5",
+            "total_harga": "153.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-14",
+        "no_nota": "YL-126D14T0649",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "qty": "1.0",
+            "harga_satuan": "34.69",
+            "total_harga": "34.69"
+          },
+          {
+            "nama_barang": "Galetto White 250GR",
+            "qty": "1.0",
+            "harga_satuan": "13.7",
+            "total_harga": "13.7"
+          },
+          {
+            "nama_barang": "Coklat Block Sparrow 500GR",
+            "qty": "1.0",
+            "harga_satuan": "23.19",
+            "total_harga": "23.19"
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "1.0",
+            "harga_satuan": "33.99",
+            "total_harga": "33.99"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-16",
+        "no_nota": "YL-22601635350",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Honig Maizena 1KG",
+            "qty": "2.0",
+            "harga_satuan": "23.99",
+            "total_harga": "47.98"
+          },
+          {
+            "nama_barang": "Almonesia Slice Almond 250GR",
+            "qty": "1.0",
+            "harga_satuan": "52.5",
+            "total_harga": "52.5"
+          },
+          {
+            "nama_barang": "Majesta Kacang Cacah Sangrai 1KG",
+            "qty": "1.0",
+            "harga_satuan": "59.5",
+            "total_harga": "59.5"
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "qty": "1.0",
+            "harga_satuan": "102.8",
+            "total_harga": "102.8"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-16",
+        "no_nota": "09943/KSR/UTM/0426",
+        "toko_supplier": "Harum Berkah",
+        "items": [
+          {
+            "nama_barang": "Dusting Vanilla Prinsfood 10 KG",
+            "qty": "2.0",
+            "harga_satuan": "25.0",
+            "total_harga": "50.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-16",
+        "no_nota": "TRANS-002-110459001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Bureo Original Bks 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "73.89",
+            "total_harga": "73.89"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-18",
+        "no_nota": "AT03202604180023",
+        "toko_supplier": "Depo Lestari",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze 1kg - Susu",
+            "qty": "1.0",
+            "harga_satuan": "36.0",
+            "total_harga": "36.0"
+          },
+          {
+            "nama_barang": "Lagie Choco Chip Coklat 250GR",
+            "qty": "2.0",
+            "harga_satuan": "22.5",
+            "total_harga": "45.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-18",
+        "no_nota": "Nota No. 317",
+        "toko_supplier": "Toko Sembako",
+        "items": [
+          {
+            "nama_barang": "Telur (Telor)",
+            "qty": "1.0",
+            "harga_satuan": "10.0",
+            "total_harga": "10.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-20",
+        "no_nota": "YL-226020H2104",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "La Kreiva Red Velvet Crumb Ex. Fine",
+            "qty": "0.5",
+            "harga_satuan": "71.0",
+            "total_harga": "35.5"
+          },
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "qty": "1.0",
+            "harga_satuan": "38.39",
+            "total_harga": "38.39"
+          },
+          {
+            "nama_barang": "Almonesia Slice Almond 250GR",
+            "qty": "1.0",
+            "harga_satuan": "52.5",
+            "total_harga": "52.5"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-21",
+        "no_nota": "YL-12602114914",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "1.0",
+            "harga_satuan": "33.99",
+            "total_harga": "33.99"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-22",
+        "no_nota": "YL-124022M3048",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "qty": "1.0",
+            "harga_satuan": "102.8",
+            "total_harga": "102.8"
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "2.0",
+            "harga_satuan": "33.99",
+            "total_harga": "67.98"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-24",
+        "no_nota": "YL-226024M2412",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Calcium Mero 25KG (Beli Ecer 1KG)",
+            "qty": "1.0",
+            "harga_satuan": "63.0",
+            "total_harga": "63.0"
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "2.0",
+            "harga_satuan": "33.99",
+            "total_harga": "67.98"
+          },
+          {
+            "nama_barang": "NC Ori Mayo 12x1KG (1 Box/Pack)",
+            "qty": "1.0",
+            "harga_satuan": "24.0",
+            "total_harga": "24.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-25",
+        "no_nota": "AT03202604250086",
+        "toko_supplier": "Depo Lestari",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze 1kg - Susu",
+            "qty": "1.0",
+            "harga_satuan": "36.0",
+            "total_harga": "36.0"
+          },
+          {
+            "nama_barang": "Collins Glaze 1kg - Strawberry",
+            "qty": "1.0",
+            "harga_satuan": "36.0",
+            "total_harga": "36.0"
+          },
+          {
+            "nama_barang": "Lagie Choco Chip Coklat 250GR",
+            "qty": "2.0",
+            "harga_satuan": "22.5",
+            "total_harga": "45.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-25",
+        "no_nota": "YL-226025N0257",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Taro 1KG",
+            "qty": "1.0",
+            "harga_satuan": "38.39",
+            "total_harga": "38.39"
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "qty": "1.0",
+            "harga_satuan": "102.8",
+            "total_harga": "102.8"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-27",
+        "no_nota": "YL-22402701534",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Lepata Strawberry CF 2x5KG",
+            "qty": "1.0",
+            "harga_satuan": "80.3",
+            "total_harga": "80.3"
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "2.0",
+            "harga_satuan": "33.99",
+            "total_harga": "67.98"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-27",
+        "no_nota": "TRANS002-152921001",
+        "toko_supplier": "Bahankoe",
+        "items": [
+          {
+            "nama_barang": "Collins Dip Glaze Dark Pail 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "35.19",
+            "total_harga": "35.19"
+          },
+          {
+            "nama_barang": "Collins Dip Glaze Greentea Pail 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "45.59",
+            "total_harga": "45.59"
+          },
+          {
+            "nama_barang": "Bureo Original Bks 1 KG",
+            "qty": "1.0",
+            "harga_satuan": "73.89",
+            "total_harga": "73.89"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-28",
+        "no_nota": "YL-226D2813736",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Topchiz BXBX250GR",
+            "qty": "1.0",
+            "harga_satuan": "100.0",
+            "total_harga": "100.0"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-29",
+        "no_nota": "YL-12602900227",
+        "toko_supplier": "Yellow Shop",
+        "items": [
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "qty": "2.0",
+            "harga_satuan": "33.99",
+            "total_harga": "67.98"
+          }
+        ]
+      },
+      {
+        "tanggal": "2026-04-01",
+        "no_nota": "Nota Sembako",
+        "toko_supplier": "Toko Sembako",
+        "items": [
+          {
+            "nama_barang": "Gula",
+            "qty": "-",
+            "harga_satuan": "-",
+            "total_harga": "36.0"
+          },
+          {
+            "nama_barang": "Minyak",
+            "qty": "-",
+            "harga_satuan": "-",
+            "total_harga": "64.0"
+          },
+          {
+            "nama_barang": "Telor",
+            "qty": "-",
+            "harga_satuan": "-",
+            "total_harga": "75.0"
+          }
+        ]
+      }
+    ],
+    "total_records": 31,
+    "total_items": 70,
+    "sumber_links": [
+      "https://mail.google.com/mail/u/0/#all/19efefbafda0b1c3",
+      "https://drive.google.com/file/d/19licmlw-dEGt5EASY9JSfsC8ESZU7dPO/view?usp=drive_web",
+      "https://drive.google.com/file/d/1oQjz9409NJr6ldqPdK3zQ7cAIENKQMPU/view?usp=drive_web",
+      "https://drive.google.com/file/d/1Pp6zt0aqtqwDFJe6lWcZHWi0Vu6be2Vn/view?usp=drive_web",
+      "https://drive.google.com/file/d/1UexxJciNvfTC-PRKsMiz-xxRJ08t-F9D/view?usp=drive_web",
+      "https://drive.google.com/file/d/1SmVv2jFCy-yIFMzxujF7yhdwXwkGqMN1/view?usp=drive_web",
+      "https://drive.google.com/file/d/1wYw2bByZbhF6AoMLqRSUGv2PdfACZLPT/view?usp=drive_web",
+      "https://drive.google.com/file/d/1YWERaIvRyFN_nxRbplnYHlIYNmevGVAm/view?usp=drive_web",
+      "https://drive.google.com/file/d/1h44d19Zi7DScFkiKankzBWEq7_eUdy5S/view?usp=drive_web",
+      "https://drive.google.com/file/d/1VcQHK5I9nr5axHhxch805Fv-DNqsnHNT/view?usp=drive_web",
+      "https://drive.google.com/file/d/1ug-Jt30Qi9-EMkw2uc_up00y_r8Aj9OY/view?usp=drive_web",
+      "https://drive.google.com/file/d/1wdMOncHOmQf6JWI7GYOFLkuESR1Lrntp/view?usp=drive_web",
+      "https://drive.google.com/file/d/1G_PQHljOgD5Qp5bZq0mRgMH0qIJmtz_y/view?usp=drive_web",
+      "https://drive.google.com/file/d/1atrZ9_XVfPWv4DQ4YxINp8yZ8keoLPCz/view?usp=drive_web",
+      "https://drive.google.com/file/d/17nqr0WU-OpCLyblwnrlPd59inMqHPLQq/view?usp=drive_web",
+      "https://drive.google.com/file/d/1uCWyH7ilQ5QfuDzIhoVIW16f69VqyRM7/view?usp=drive_web",
+      "https://drive.google.com/file/d/15fLCC3P3R8zs7YIuYgMCJ7XbgmXFTWmj/view?usp=drive_web",
+      "https://drive.google.com/file/d/1zVa9JsdK83-_RRZlMDKGSM3-fjoBK8RQ/view?usp=drive_web",
+      "https://drive.google.com/file/d/1LZ_OEkx4Dx81t7aLvPRwE38iyGkp8ZPI/view?usp=drive_web",
+      "https://drive.google.com/file/d/1RFV9P0chjsNYJ-skRA91gYLAqNPAekj8/view?usp=drive_web",
+      "https://drive.google.com/file/d/1FznqvBXKbYpfurIAneZQtaO2JNwAfhuo/view?usp=drive_web",
+      "https://drive.google.com/file/d/14K53tNSH6LF5qStbEJMrSJKjHVoFsJuL/view?usp=drive_web",
+      "https://drive.google.com/file/d/1n_eArFkrj-XGI77AlFP15oAB1dsIOBND/view?usp=drive_web",
+      "https://drive.google.com/file/d/1XR_Ou0WZxf5f1A3hKfbacIGxg2VSDjMk/view?usp=drive_web",
+      "https://drive.google.com/file/d/1jHj4Ylq0oNVQUci_3ewQ0uNrNumg_5jW/view?usp=drive_web",
+      "https://drive.google.com/file/d/1-d2IdSRVXGwz4j5yApOneD5XmUaB9TLS/view?usp=drive_web",
+      "https://drive.google.com/file/d/1UBf7Rh4tR_4LScxB_qcOQZC28NH-zoMi/view?usp=drive_web",
+      "https://drive.google.com/file/d/1kZW-O9kP2TzO_CBQjI2S6rFuogmOWXmi/view?usp=drive_web",
+      "https://drive.google.com/file/d/1t8CGD75EWVSypiRp3jsv-bCXB7InMlGN/view?usp=drive_web",
+      "https://drive.google.com/file/d/1nazJNcHpgYRNF77AJ4mrnew7zzwCK6rG/view?usp=drive_web",
+      "https://drive.google.com/file/d/1JxqZMYBwu8UMVLemv-v90HlvGwoY1sVr/view?usp=drive_web",
+      "https://drive.google.com/file/d/1sDGG4f1LbsGsrtObs_r4r4cs0y_ENPFu/view?usp=drive_web",
+      "https://drive.google.com/file/d/19P-btQBtpQG8DywJH9_6x_FIimZ-OiiK/view?usp=drive_web",
+      "https://drive.google.com/file/d/1t5-N6zOMNvm2PN-LkaBr41o0J3blq3zZ/view?usp=drive_web",
+      "https://drive.google.com/file/d/1mvZhf_2Osl9Nh1U9Nt2EsXPF3QA8DXGz/view?usp=drive_web",
+      "https://drive.google.com/file/d/1PCOGGQ3_QxQ3c3lpEQA5piNrJ5oaUMfd/view?usp=drive_web",
+      "https://drive.google.com/file/d/1hFMk8fDM_XzrbqTrWQCGeBRlprp1xbM2/view?usp=drive_web",
+      "https://drive.google.com/file/d/1oz5sRGP9rBcP3SUpHQNkRVGnMobosVI_/view?usp=drive_web",
+      "https://drive.google.com/file/d/1qUfAe141V9I4KxHYxCt6xkiKk35amWoY/view?usp=drive_web",
+      "https://drive.google.com/file/d/1juDjclTML--QRPjj2Vual4bW8UqeOzS2/view?usp=drive_web",
+      "https://drive.google.com/file/d/1jF0q2R5_Ep3jLcsN2anaPysD0HdtP6qM/view?usp=drive_web",
+      "https://drive.google.com/file/d/1aeIuOfoTH1Tcd6-WE3e4zW1ztzId9TGR/view?usp=drive_web"
+    ]
+  }
+}

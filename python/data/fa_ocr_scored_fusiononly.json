@@ -1,0 +1,322 @@
+[
+  {
+    "link": "link02",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 84.17431832284693,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.8639473684210527
+  },
+  {
+    "link": "link03",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 64.94573958904945,
+    "field_accuracy": 0.875,
+    "char_accuracy": 0.9666666666666667
+  },
+  {
+    "link": "link04",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 74.89136344068302,
+    "field_accuracy": 0.875,
+    "char_accuracy": 0.7068293775190326
+  },
+  {
+    "link": "link05",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 75.28459976669505,
+    "field_accuracy": 0.75,
+    "char_accuracy": 0.5994771241830066
+  },
+  {
+    "link": "link06",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 39.99788961000549,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.22886904761904764
+  },
+  {
+    "link": "link07",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 80.9117334620956,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.9666666666666666
+  },
+  {
+    "link": "link08",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 73.37808631073348,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.7327611726508785
+  },
+  {
+    "link": "link09",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 60.12457312051746,
+    "field_accuracy": 0.6875,
+    "char_accuracy": 0.561038961038961
+  },
+  {
+    "link": "link11",
+    "format_true": "handwritten",
+    "format_pred": "none",
+    "confidence": 61.157829851308115,
+    "field_accuracy": 0.125,
+    "char_accuracy": 0.47333333333333333
+  },
+  {
+    "link": "link12",
+    "format_true": "handwritten",
+    "format_pred": "none",
+    "confidence": 72.86844729344729,
+    "field_accuracy": 0.4583333333333333,
+    "char_accuracy": 0.39874686716791974
+  },
+  {
+    "link": "link13",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 40.92731411733428,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.20995670995670998
+  },
+  {
+    "link": "link14",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 49.146239852444054,
+    "field_accuracy": 0.2,
+    "char_accuracy": 0.31496632985001705
+  },
+  {
+    "link": "link15",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 38.571672349664354,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.21994491576534922
+  },
+  {
+    "link": "link16",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 50.10375270509542,
+    "field_accuracy": 0.5,
+    "char_accuracy": 0.3796296296296296
+  },
+  {
+    "link": "link17",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 60.69215913684879,
+    "field_accuracy": 0.35833333333333334,
+    "char_accuracy": 0.4963691279480753
+  },
+  {
+    "link": "link18",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 82.69116161616162,
+    "field_accuracy": 0.9166666666666666,
+    "char_accuracy": 0.8457977207977208
+  },
+  {
+    "link": "link19",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 76.37755010445228,
+    "field_accuracy": 0.875,
+    "char_accuracy": 0.9074074074074074
+  },
+  {
+    "link": "link20",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 42.21057776900389,
+    "field_accuracy": 0.37916666666666665,
+    "char_accuracy": 0.33441558441558444
+  },
+  {
+    "link": "link21",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 48.36352314568539,
+    "field_accuracy": 0.2916666666666667,
+    "char_accuracy": 0.4962390550625845
+  },
+  {
+    "link": "link22",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 75.06296473856096,
+    "field_accuracy": 0.8888888888888888,
+    "char_accuracy": 0.8156906906906907
+  },
+  {
+    "link": "link23",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 38.96140615952519,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.1717032967032967
+  },
+  {
+    "link": "link24",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 76.8515919158361,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.9527027027027026
+  },
+  {
+    "link": "link25",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 38.43764149514157,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.19813519813519812
+  },
+  {
+    "link": "link26",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 76.76470501085043,
+    "field_accuracy": 0.9375,
+    "char_accuracy": 0.7944444444444445
+  },
+  {
+    "link": "link27",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 37.77373535947906,
+    "field_accuracy": 0.025,
+    "char_accuracy": 0.20872724089635852
+  },
+  {
+    "link": "link28",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 77.12964793826862,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.9838709677419355
+  },
+  {
+    "link": "link29",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 72.85191474936576,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.9420289855072465
+  },
+  {
+    "link": "link30",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 63.693294411575074,
+    "field_accuracy": 0.625,
+    "char_accuracy": 0.5777331504702194
+  },
+  {
+    "link": "link31",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 39.7489072810558,
+    "field_accuracy": 0.05,
+    "char_accuracy": 0.24632132573309046
+  },
+  {
+    "link": "link32",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 39.251518318184985,
+    "field_accuracy": 0.25,
+    "char_accuracy": 0.33946608946608947
+  },
+  {
+    "link": "link33",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 47.09361612726704,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.15530303030303028
+  },
+  {
+    "link": "link34",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 35.402647923272156,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.20616883116883117
+  },
+  {
+    "link": "link35",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 36.37991339885007,
+    "field_accuracy": 0.08333333333333333,
+    "char_accuracy": 0.21934315684315683
+  },
+  {
+    "link": "link36",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 78.34676215424483,
+    "field_accuracy": 0.9375,
+    "char_accuracy": 0.8097222222222221
+  },
+  {
+    "link": "link37",
+    "format_true": "dot_matrix",
+    "format_pred": "none",
+    "confidence": 33.52756267560667,
+    "field_accuracy": 0.0,
+    "char_accuracy": 0.19805194805194803
+  },
+  {
+    "link": "link38",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 79.24688655306849,
+    "field_accuracy": 1.0,
+    "char_accuracy": 0.809116809116809
+  },
+  {
+    "link": "link39",
+    "format_true": "handwritten",
+    "format_pred": "none",
+    "confidence": 64.69533898529536,
+    "field_accuracy": 0.3333333333333333,
+    "char_accuracy": 0.37273739905318853
+  },
+  {
+    "link": "link40",
+    "format_true": "handwritten",
+    "format_pred": "none",
+    "confidence": 65.40407268170426,
+    "field_accuracy": 0.41666666666666663,
+    "char_accuracy": 0.531885268727374
+  },
+  {
+    "link": "link41",
+    "format_true": "thermal_clean",
+    "format_pred": "none",
+    "confidence": 78.3555792034053,
+    "field_accuracy": 0.25,
+    "char_accuracy": 0.4679487179487179
+  },
+  {
+    "link": "link42",
+    "format_true": "handwritten",
+    "format_pred": "none",
+    "confidence": 61.115644224196856,
+    "field_accuracy": 0.3333333333333333,
+    "char_accuracy": 0.3902812587023113
+  }
+]

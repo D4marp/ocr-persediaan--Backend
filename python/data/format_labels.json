@@ -1,0 +1,289 @@
+{
+  "link24": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE POS thermal receipt, condensed monospace font; zoomed inspection confirms unbroken strokes with no discrete dots. Clean CamScanner capture."
+  },
+  "link25": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible, dotted/dashed strokes",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt; every glyph and separator line is built from clearly separated dots. Faint/low-contrast print."
+  },
+  "link26": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE POS thermal receipt, same printer/font as link24 and link29. Slight paper creasing and shadow at edges but strokes are solid."
+  },
+  "link27": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible, dotted/dashed strokes",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt, same dot-font printer as link25/link31/link32/link33."
+  },
+  "link28": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "HARUM BERKAH POS thermal receipt; zoomed inspection confirms smooth continuous letterforms. High contrast, well aligned."
+  },
+  "link29": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE POS thermal receipt, same printer as link24/link26. Slightly lighter print in places but strokes remain continuous."
+  },
+  "link30": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes, slightly ragged edges",
+    "confidence": "medium",
+    "notes": "Depo Lestari receipt with proportional sans-serif font and a graphic logo, suggesting a higher-resolution thermal printer. Zoomed inspection shows continuous strokes with ragged/eroded edges from scanning, not discrete dots; logo shows heavy dithering/striping but that is halftoned artwork, not text."
+  },
+  "link31": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible, dotted/dashed strokes",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt, same dot-font printer as the other YELLOW SHOP notas."
+  },
+  "link32": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible, bluish dotted strokes",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt with distinctly navy/blue ink typical of an impact ribbon; dot structure is very pronounced. Clearest dot_matrix example in this batch."
+  },
+  "link33": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible, dotted/dashed strokes",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt (Brigjen Hasan Basri branch); same dot-font printer, print is fairly faint."
+  },
+  "link02": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "POS thermal receipt (Titi Disk Stationery) with QR code. At 5x zoom letter strokes are smooth and unbroken, no dot structure."
+  },
+  "link03": {
+    "format": "thermal_clean",
+    "ink_color": "blue",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "medium",
+    "notes": "Full-page supplier invoice (PT. Selamat Sejahtera Sejati), image rotated 90 deg. Entirely blue ink, which superficially suggests an impact ribbon, but at 12x zoom both the form labels and the data values show smooth solid strokes with no dot structure, so classed as machine-printed clean. Mixed content: handwritten signature and date '13.04.26' in the sign-off area. Main residual ambiguity in this set."
+  },
+  "link04": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "Depo Lestari receipt. Body text solid and continuous at 5x zoom. The store logo at top and the separator rules look coarse/dotted, but that is a halftoned raster graphic, not the text font."
+  },
+  "link05": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "LJM receipt. At 5x zoom characters are clearly assembled from discrete dot cells with visible gaps and notched edges. Dotted separator rules throughout."
+  },
+  "link06": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "Yellow Shop receipt. Most pronounced dot structure in the set: individual dots fully separated with white gaps between them. Bluish-purple impact ribbon."
+  },
+  "link07": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "Bahankoe receipt. Clean monospace font, strokes solid and evenly weighted at 5x zoom."
+  },
+  "link08": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "Yellow Shop receipt, same printer family as link06/link09 but darker/blacker ink. Dot grid clearly resolvable at 5x zoom; strokes show characteristic dot-cell notching."
+  },
+  "link09": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "Yellow Shop receipt, dark navy/blue ribbon. Discrete dots with visible gaps confirmed at 6x zoom."
+  },
+  "link10": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen cursive",
+    "confidence": "high",
+    "notes": "Pre-printed blank nota form (NOTA No., BANYAKNYA, NAMA BARANG, HARGA, JUMLAH headers printed). All transaction data is handwritten in ballpoint: one line item plus date and total."
+  },
+  "link11": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen cursive",
+    "confidence": "high",
+    "notes": "Same pre-printed nota form as link10. Three handwritten line items plus handwritten date and total."
+  },
+  "link12": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen block printing",
+    "confidence": "high",
+    "notes": "Pre-printed nota form with one handwritten line item and handwritten date. Also carries a red rubber-stamp shop logo (TK. Berkah Mandiri) and a black stamped address block; stamps are not machine print and do not affect the label."
+  },
+  "link34": {
+    "format": "dot_matrix",
+    "ink_color": "dark blue",
+    "stroke_appearance": "discrete dots visible, coarse dotted grid font",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt. Every glyph clearly resolves into individual dots with gaps; separator lines are dashed dot runs. Bluish/navy ink consistent with impact ribbon."
+  },
+  "link35": {
+    "format": "dot_matrix",
+    "ink_color": "dark blue",
+    "stroke_appearance": "discrete dots visible, coarse dotted grid font",
+    "confidence": "high",
+    "notes": "Same YELLOW SHOP printer/template as link34. Dot structure obvious in headers and item lines."
+  },
+  "link36": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE POS receipt. Smooth uniform strokes, no dot structure; only faint scan artifacts."
+  },
+  "link37": {
+    "format": "dot_matrix",
+    "ink_color": "dark blue",
+    "stroke_appearance": "discrete dots visible, coarse dotted grid font",
+    "confidence": "high",
+    "notes": "Same YELLOW SHOP printer as link34/link35."
+  },
+  "link38": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes, thin condensed font",
+    "confidence": "medium",
+    "notes": "Indomaret BAF payment slip. Strokes read as continuous rather than dotted, but the font is thin and slightly ragged at this resolution, so a fine-pitch dot font cannot be fully excluded. Bottom footer block and QR are clearly solid thermal print."
+  },
+  "link39": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen cursive",
+    "confidence": "high",
+    "notes": "Mixed: pre-printed nota form (NOTA NO., BANYAKNYA, NAMA BARANG, HARGA, JUMLAH) plus a red/black TK. BERKAH MANDIRI rubber stamp, but all transaction data (qty, item, prices, total) is handwritten in black pen."
+  },
+  "link40": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen cursive",
+    "confidence": "high",
+    "notes": "Same pre-printed nota form and rubber stamp as link39; single handwritten line item (3 pak PEX 30). Data handwritten."
+  },
+  "link41": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "Indomaret receipt, large clean thermal print with QR code. No dot structure."
+  },
+  "link42": {
+    "format": "handwritten",
+    "ink_color": "black",
+    "stroke_appearance": "pen cursive",
+    "confidence": "high",
+    "notes": "Same pre-printed nota form and rubber stamp as link39/link40; two handwritten line items plus handwritten total."
+  },
+  "link13": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP POS receipt. Coarse dot font, individual dots clearly separated in every glyph; bluish/navy ink typical of impact ribbon. Separator lines render as rows of discrete dashes/dots. CamScanner-processed."
+  },
+  "link14": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "Same YELLOW SHOP printer as link13 but darker/blacker ink. Dot structure clearly visible in letter strokes; some glyphs partially broken (weak pins)."
+  },
+  "link15": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt with member/address block. Dotted glyph construction visible throughout."
+  },
+  "link16": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "TOKO SATU receipt. Largest/coarsest dot font of the set - dot grid unmistakable in every character. Top edge shows a dotted artifact row from the scan/print."
+  },
+  "link17": {
+    "format": "dot_matrix",
+    "ink_color": "black",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP, same printer family as link13/14/15. Print is denser/cleaner here so dots partially merge, but dot texture still resolvable in headers and separator rows."
+  },
+  "link18": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE POS thermal receipt. Smooth uniform sans glyphs with continuous strokes, no dot structure. Minor thermal fade on a few characters."
+  },
+  "link19": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE thermal receipt, same printer as link18/link22. Large clean solid type; slight patchiness on a few letters from uneven thermal contact, not dots."
+  },
+  "link20": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP dot-matrix receipt. Mixed media: a handwritten pen bracket down the left margin and the word 'Pribadi' annotated at the bottom, but all transaction data is machine-printed, so format stays dot_matrix."
+  },
+  "link21": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt, navy/blue ribbon ink. Clean impression but dot grid still visible within strokes and in the '=' separator rows."
+  },
+  "link22": {
+    "format": "thermal_clean",
+    "ink_color": "black",
+    "stroke_appearance": "solid continuous strokes",
+    "confidence": "high",
+    "notes": "BAHANKOE thermal receipt. Solid continuous glyphs; a few characters faded/thin from thermal head wear but no discrete dot structure."
+  },
+  "link23": {
+    "format": "dot_matrix",
+    "ink_color": "blue",
+    "stroke_appearance": "discrete dots visible",
+    "confidence": "high",
+    "notes": "YELLOW SHOP receipt, light bluish impression. Faint print makes the dot pattern especially obvious - many glyphs show clear gaps between pins."
+  }
+}

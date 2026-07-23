@@ -1,0 +1,114 @@
+{
+  "accuracy": 0.9545,
+  "f1_score": 0.9545,
+  "precision": 0.9583,
+  "recall": 0.9545,
+  "train_samples": 88,
+  "test_samples": 22,
+  "total_samples": 110,
+  "model_version": "auto-select-v2",
+  "selected_model": "RandomForest+word_13",
+  "cv_f1_mean": 0.9818,
+  "cv_f1_std": 0.0223,
+  "model_comparison": [
+    {
+      "model": "LinearSVC+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9818,
+      "cv_f1_std": 0.0364
+    },
+    {
+      "model": "LogisticRegression+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9818,
+      "cv_f1_std": 0.0364
+    },
+    {
+      "model": "SGDClassifier+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9818,
+      "cv_f1_std": 0.0364
+    },
+    {
+      "model": "RidgeClassifier+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9818,
+      "cv_f1_std": 0.0364
+    },
+    {
+      "model": "ComplementNB+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9454,
+      "cv_f1_std": 0.0531
+    },
+    {
+      "model": "RandomForest+word_12",
+      "vectorizer": "word_12",
+      "cv_f1_mean": 0.9726,
+      "cv_f1_std": 0.0366
+    },
+    {
+      "model": "LinearSVC+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9635,
+      "cv_f1_std": 0.0447
+    },
+    {
+      "model": "LogisticRegression+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9545,
+      "cv_f1_std": 0.0576
+    },
+    {
+      "model": "SGDClassifier+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9635,
+      "cv_f1_std": 0.0447
+    },
+    {
+      "model": "RidgeClassifier+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9635,
+      "cv_f1_std": 0.0447
+    },
+    {
+      "model": "ComplementNB+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9273,
+      "cv_f1_std": 0.068
+    },
+    {
+      "model": "RandomForest+word_13",
+      "vectorizer": "word_13",
+      "cv_f1_mean": 0.9818,
+      "cv_f1_std": 0.0223
+    }
+  ],
+  "report": {
+    "barang_keluar": {
+      "precision": 1.0,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.9523809523809523,
+      "support": 11.0
+    },
+    "barang_masuk": {
+      "precision": 0.9166666666666666,
+      "recall": 1.0,
+      "f1-score": 0.9565217391304348,
+      "support": 11.0
+    },
+    "accuracy": 0.9545454545454546,
+    "macro avg": {
+      "precision": 0.9583333333333333,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9544513457556936,
+      "support": 22.0
+    },
+    "weighted avg": {
+      "precision": 0.9583333333333333,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9544513457556936,
+      "support": 22.0
+    }
+  }
+}

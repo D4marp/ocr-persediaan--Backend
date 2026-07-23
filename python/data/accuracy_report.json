@@ -1,0 +1,1272 @@
+{
+  "summary": {
+    "n_images_evaluated": 40,
+    "n_images_total_downloaded": 41,
+    "n_images_unmatched": 1,
+    "mean_field_detection_rate_pct": 46.69,
+    "mean_field_char_accuracy_pct": 53.43
+  },
+  "per_image": [
+    {
+      "link": "link02_19licmlw-dEGt5EASY9JSfsC8ESZU7dPO",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "SI-TD-2026-04-00854",
+      "toko": "Titi Disk Stationery",
+      "n_items": 3,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 85.56,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.8639473684210527,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Plastik Undangan 10.5x25",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Plastik Undangan 9x25",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Lakban ABC Warna Silver",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link03_1oQjz9409NJr6ldqPdK3zQ7cAIENKQMPU",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "Z260401849",
+      "toko": "PT. Selamat Sejahtera Sejati",
+      "n_items": 1,
+      "ocr_mode": "psm-3",
+      "ocr_confidence": 74.11,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.9666666666666667,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Athena Bread Improver LS 5 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link04_1Pp6zt0aqtqwDFJe6lWcZHWi0Vu6be2Vn",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "AT03202604250086",
+      "toko": "Depo Lestari",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 64.11,
+      "field_accuracy": 0.75,
+      "char_accuracy": 0.6920566502463055,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze 1kg - Susu",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Glaze 1kg - Strawberry",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Lagie Choco Chip Coklat 250GR",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link05_1UexxJciNvfTC-PRKsMiz-xxRJ08t-F9D",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "UMRRA-26.04.08-20",
+      "toko": "UMRRA",
+      "n_items": 3,
+      "ocr_mode": "psm-4",
+      "ocr_confidence": 74.51,
+      "field_accuracy": 0.625,
+      "char_accuracy": 0.6250267379679144,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "OPP 13x13 Daun Mas",
+            "name_score": 1.0,
+            "total_harga_score": 0.5
+          },
+          {
+            "nama_barang": "TW Klir 200",
+            "name_score": 0.5,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "OPP 20x30 Daun Mas",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link06_1SmVv2jFCy-yIFMzxujF7yhdwXwkGqMN1",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "YL-22600954957",
+      "toko": "Yellow Shop",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 38.23,
+      "field_accuracy": 0.0,
+      "char_accuracy": 0.2324675324675325,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Kertas Nasi Motif Bakery 25X27,5",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Collins Glaze Matcha 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Collins Glaze Milk 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link07_1wYw2bByZbhF6AoMLqRSUGv2PdfACZLPT",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "TRANS-001-193412001",
+      "toko": "Bahankoe",
+      "n_items": 3,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 84.69,
+      "field_accuracy": 1.0,
+      "char_accuracy": 1.0,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Dragonpack Cases Glassine Black Rol 5",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Trimit Colour (Spikel Pasir) 50 KG (Ons)",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Dip Glaze Milky Pail 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link08_1YWERaIvRyFN_nxRbplnYHlIYNmevGVAm",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-12601333608",
+      "toko": "Yellow Shop",
+      "n_items": 6,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 68.94,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.8369278393175452,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Kulit Gandum 1KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Glaze Strawberry 1KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Kings Red Velvet Crumb Halus 250GR",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Glaze Matcha 1KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Glaze Milk 1KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Donut Dusting Vanila",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link09_1h44d19Zi7DScFkiKankzBWEq7_eUdy5S",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-22600235047",
+      "toko": "Yellow Shop",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 49.48,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.7521885521885522,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Wijen Putih \"Number 1\" 0.5 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link11_1ug-Jt30Qi9-EMkw2uc_up00y_r8Aj9OY",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "Nota Sembako",
+      "toko": "Toko Sembako",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 56.93,
+      "field_accuracy": 0.125,
+      "char_accuracy": 0.37333333333333335,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Gula",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Minyak",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Telor",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link12_1wdMOncHOmQf6JWI7GYOFLkuESR1Lrntp",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Nota No. 93",
+      "toko": "Toko Berkah Mandiri",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 57.22,
+      "field_accuracy": 0.4583333333333333,
+      "char_accuracy": 0.4288220551378446,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 0.3333333333333333,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 25",
+            "name_score": 0.5,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link13_1G_PQHljOgD5Qp5bZq0mRgMH0qIJmtz_y",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "YL-22602233135",
+      "toko": "Yellow Shop",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 34.54,
+      "field_accuracy": 0.05,
+      "char_accuracy": 0.25865800865800864,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Toples PET 500ML - Cap Natural",
+            "name_score": 0.2,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link14_1atrZ9_XVfPWv4DQ4YxINp8yZ8keoLPCz",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "YL-226024M2412",
+      "toko": "Yellow Shop",
+      "n_items": 4,
+      "ocr_mode": "psm-4",
+      "ocr_confidence": 50.52,
+      "field_accuracy": 0.4033333333333333,
+      "char_accuracy": 0.48644974747649217,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Wool Brush #3 Kayu Besar",
+            "name_score": 0.75,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Calcium Mero 25KG (Beli Ecer 1KG)",
+            "name_score": 0.3333333333333333,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.75,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "NC Ori Mayo 12x1KG (1 Box/Pack)",
+            "name_score": 0.2,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link15_17nqr0WU-OpCLyblwnrlPd59inMqHPLQq",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "YL-226D2813736",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 36.59,
+      "field_accuracy": 0.08333333333333333,
+      "char_accuracy": 0.22652386313377026,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Kertas Nasi Motif Cake 25x27.5 CH Food",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Topchiz BXBX250GR",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link16_1uCWyH7ilQ5QfuDzIhoVIW16f69VqyRM7",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Struk 370243",
+      "toko": "Toko Satu",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 45.09,
+      "field_accuracy": 0.25,
+      "char_accuracy": 0.34259259259259256,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "OPP 20x30 x 1.3 x 21 Mic",
+            "name_score": 0.0,
+            "total_harga_score": 0.5
+          }
+        ]
+      }
+    },
+    {
+      "link": "link17_15fLCC3P3R8zs7YIuYgMCJ7XbgmXFTWmj",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-126D14T0649",
+      "toko": "Yellow Shop",
+      "n_items": 4,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 46.85,
+      "field_accuracy": 0.13333333333333333,
+      "char_accuracy": 0.44278674541832436,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Galetto White 250GR",
+            "name_score": 0.3333333333333333,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Coklat Block Sparrow 500GR",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link18_1zVa9JsdK83-_RRZlMDKGSM3-fjoBK8RQ",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS001-092333001",
+      "toko": "Bahankoe",
+      "n_items": 4,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 84.62,
+      "field_accuracy": 0.9166666666666666,
+      "char_accuracy": 0.8457977207977208,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Wincheez Keju Kotak 2 KG",
+            "name_score": 0.6666666666666666,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Maizenaku Corn Starch 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Kacang Cacah Butiran Besar",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Le Patta Vanila Bks 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link19_1LZ_OEkx4Dx81t7aLvPRwE38iyGkp8ZPI",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS002-102646001",
+      "toko": "Bahankoe",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 71.96,
+      "field_accuracy": 0.875,
+      "char_accuracy": 0.9074074074074074,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Wincheez Keju Bks 250 GR",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link20_1RFV9P0chjsNYJ-skRA91gYLAqNPAekj8",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "YL-226005P5259",
+      "toko": "Yellow Shop",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 43.24,
+      "field_accuracy": 0.28541666666666665,
+      "char_accuracy": 0.2304195804195804,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Pls OPP 13x13",
+            "name_score": 0.3333333333333333,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Cocoa Roman 35GR x 10 Pack",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Roma Arden Yogurt Straw 30GR",
+            "name_score": 0.2,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link21_1FznqvBXKbYpfurIAneZQtaO2JNwAfhuo",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-12600552256",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-3",
+      "ocr_confidence": 39.75,
+      "field_accuracy": 0.06944444444444443,
+      "char_accuracy": 0.19360786272550978,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Jay's Oregano Leaves 250GR",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Kings Red Velvet Crumb Halus 250GR",
+            "name_score": 0.16666666666666666,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link22_14K53tNSH6LF5qStbEJMrSJKjHVoFsJuL",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS002-104754001",
+      "toko": "Bahankoe",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 65.49,
+      "field_accuracy": 0.8888888888888888,
+      "char_accuracy": 0.8427177177177178,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Boncoco Cokelat Isian Roti Pasta 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Shine Road Non Dairy Cream Topping 1L",
+            "name_score": 0.8333333333333334,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link23_1n_eArFkrj-XGI77AlFP15oAB1dsIOBND",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-226DOBN5947",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 34.31,
+      "field_accuracy": 0.0,
+      "char_accuracy": 0.22327672327672327,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Collins Glaze Taro 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link24_1XR_Ou0WZxf5f1A3hKfbacIGxg2VSDjMk",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS-002-150754001",
+      "toko": "Bahankoe",
+      "n_items": 2,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 83.23,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.9527027027027026,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Shine Road Non Dairy Cream Topping 1L",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Boncoco Cokelat Isian Roti Pasta 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link25_1jHj4Ylq0oNVQUci_3ewQ0uNrNumg_5jW",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-22601115002",
+      "toko": "Yellow Shop",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 35.91,
+      "field_accuracy": 0.0,
+      "char_accuracy": 0.22194472194472192,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link26_1-d2IdSRVXGwz4j5yApOneD5XmUaB9TLS",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS001-134627001",
+      "toko": "Bahankoe",
+      "n_items": 3,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 74.46,
+      "field_accuracy": 0.9375,
+      "char_accuracy": 0.9290598290598291,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Almonesia Almond Slice Bks 250 GR",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Kacang Cacah Butiran Besar",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Lagie Choco Chips 1/2 Bulat 3 KG (Ons)",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link27_1UBf7Rh4tR_4LScxB_qcOQZC28NH-zoMi",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-22601635350",
+      "toko": "Yellow Shop",
+      "n_items": 4,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 35.74,
+      "field_accuracy": 0.05,
+      "char_accuracy": 0.19668321874204228,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Honig Maizena 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Almonesia Slice Almond 250GR",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Majesta Kacang Cacah Sangrai 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "name_score": 0.5,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link28_1kZW-O9kP2TzO_CBQjI2S6rFuogmOWXmi",
+      "matched_in": [
+        "pembelian",
+        "produksi"
+      ],
+      "no_nota": "09943/KSR/UTM/0426",
+      "toko": "Harum Berkah",
+      "n_items": 4,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 65.76,
+      "field_accuracy": 1.0,
+      "char_accuracy": 1.0,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Bawang PEX 25 Bening",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Kharisma 15 Biru",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Sarung Tangan Be Glove",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Dusting Vanilla Prinsfood 10 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link29_1t8CGD75EWVSypiRp3jsv-bCXB7InMlGN",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS-002-110459001",
+      "toko": "Bahankoe",
+      "n_items": 1,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 77.63,
+      "field_accuracy": 1.0,
+      "char_accuracy": 1.0,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Bureo Original Bks 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link30_1nazJNcHpgYRNF77AJ4mrnew7zzwCK6rG",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "AT03202604180023",
+      "toko": "Depo Lestari",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 56.62,
+      "field_accuracy": 0.625,
+      "char_accuracy": 0.578582157784744,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze 1kg - Susu",
+            "name_score": 0.75,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Lagie Choco Chip Coklat 250GR",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link31_1JxqZMYBwu8UMVLemv-v90HlvGwoY1sVr",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-226020H2104",
+      "toko": "Yellow Shop",
+      "n_items": 3,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 36.42,
+      "field_accuracy": 0.0875,
+      "char_accuracy": 0.24142622083798554,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "La Kreiva Red Velvet Crumb Ex. Fine",
+            "name_score": 0.2,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Collins Glaze Tiramisu 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Almonesia Slice Almond 250GR",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link32_1sDGG4f1LbsGsrtObs_r4r4cs0y_ENPFu",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-12602114914",
+      "toko": "Yellow Shop",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 34.11,
+      "field_accuracy": 0.0,
+      "char_accuracy": 0.275974025974026,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link33_19P-btQBtpQG8DywJH9_6x_FIimZ-OiiK",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-124022M3048",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 34.86,
+      "field_accuracy": 0.041666666666666664,
+      "char_accuracy": 0.20535714285714285,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link34_1t5-N6zOMNvm2PN-LkaBr41o0J3blq3zZ",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-226025N0257",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 33.26,
+      "field_accuracy": 0.041666666666666664,
+      "char_accuracy": 0.1883116883116883,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Glaze Taro 1KG",
+            "name_score": 0.25,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Wincheez 250GR (Pak 2KG)",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link35_1mvZhf_2Osl9Nh1U9Nt2EsXPF3QA8DXGz",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-22402701534",
+      "toko": "Yellow Shop",
+      "n_items": 2,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 34.27,
+      "field_accuracy": 0.08333333333333333,
+      "char_accuracy": 0.22895854145854144,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.5,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Lepata Strawberry CF 2x5KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          },
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link36_1PCOGGQ3_QxQ3c3lpEQA5piNrJ5oaUMfd",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "TRANS002-152921001",
+      "toko": "Bahankoe",
+      "n_items": 3,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 84.52,
+      "field_accuracy": 0.9375,
+      "char_accuracy": 0.9444444444444444,
+      "detail": {
+        "no_nota": 0.5,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Collins Dip Glaze Dark Pail 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Collins Dip Glaze Greentea Pail 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          },
+          {
+            "nama_barang": "Bureo Original Bks 1 KG",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link37_1hFMk8fDM_XzrbqTrWQCGeBRlprp1xbM2",
+      "matched_in": [
+        "produksi"
+      ],
+      "no_nota": "YL-12602900227",
+      "toko": "Yellow Shop",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 33.57,
+      "field_accuracy": 0.0,
+      "char_accuracy": 0.20057720057720055,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Boncoco Coklat Pasta 1KG",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link38_1oz5sRGP9rBcP3SUpHQNkRVGnMobosVI_",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Indomaret",
+      "toko": "Melayu Darat",
+      "n_items": 1,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 79.99,
+      "field_accuracy": 1.0,
+      "char_accuracy": 0.809116809116809,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 1.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Angsuran BAF (Fitri Halidah)",
+            "name_score": 1.0,
+            "total_harga_score": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link39_1qUfAe141V9I4KxHYxCt6xkiKk35amWoY",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Nota No. 4",
+      "toko": "Toko Berkah Mandiri",
+      "n_items": 1,
+      "ocr_mode": "psm-11",
+      "ocr_confidence": 67.45,
+      "field_accuracy": 0.3333333333333333,
+      "char_accuracy": 0.47925368978000554,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 0.3333333333333333,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 30",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link40_1juDjclTML--QRPjj2Vual4bW8UqeOzS2",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Nota No. 4",
+      "toko": "Toko Berkah Mandiri",
+      "n_items": 1,
+      "ocr_mode": "psm-4",
+      "ocr_confidence": 79.41,
+      "field_accuracy": 0.25,
+      "char_accuracy": 0.4617098301308828,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 30",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link41_1jF0q2R5_Ep3jLcsN2anaPysD0HdtP6qM",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Indomaret",
+      "toko": "Melayu Darat",
+      "n_items": 1,
+      "ocr_mode": "psm-6",
+      "ocr_confidence": 81.64,
+      "field_accuracy": 0.25,
+      "char_accuracy": 0.44017094017094016,
+      "detail": {
+        "no_nota": 1.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Angsuran BAF (Fitri Halidah)",
+            "name_score": 0.0,
+            "total_harga_score": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "link": "link42_1aeIuOfoTH1Tcd6-WE3e4zW1ztzId9TGR",
+      "matched_in": [
+        "pembelian"
+      ],
+      "no_nota": "Nota No. 4",
+      "toko": "Toko Berkah Mandiri",
+      "n_items": 1,
+      "ocr_mode": "psm-3",
+      "ocr_confidence": 69.98,
+      "field_accuracy": 0.125,
+      "char_accuracy": 0.2464494569757728,
+      "detail": {
+        "no_nota": 0.0,
+        "toko": 0.0,
+        "tanggal": null,
+        "items": [
+          {
+            "nama_barang": "Plastik PEX 30",
+            "name_score": 0.0,
+            "total_harga_score": 0.5
+          }
+        ]
+      }
+    }
+  ]
+}

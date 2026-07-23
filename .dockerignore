@@ -1,0 +1,5 @@
+python/.venv
+python/models/*.pkl
+uploads/
+*.pyc
+__pycache__/

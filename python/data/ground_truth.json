@@ -1,0 +1,570 @@
+{
+  "version": "1.1",
+  "description": "Ground truth dataset klasifikasi transaksi UMKM (barang_masuk vs barang_keluar)",
+  "source": "Synthetic — mensimulasikan output OCR dari 5 UMKM",
+  "total_samples": 110,
+  "label_distribution": {
+    "barang_masuk": 55,
+    "barang_keluar": 55
+  },
+  "umkm_count": 5,
+  "umkm_ids": [
+    "umkm_bangunan",
+    "umkm_bengkel",
+    "umkm_kelontong",
+    "umkm_kopi",
+    "umkm_sembako"
+  ],
+  "data": [
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nNOTA PEMBELIAN\nTgl: 12/03/2025\nSupplier: PT Beras Nusantara\nBeras Premium 5 kg Rp 65.000\nMinyak Goreng 2 liter Rp 38.000\nGula Pasir 1 kg Rp 14.500\nTotal Rp 117.500",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nFAKTUR BELI No: FB-2025-0312\nTanda Terima Barang\nTerima dari supplier\nTepung Terigu 10 kg Rp 95.000\nKecap Manis 3 botol Rp 27.000\nTotal pembayaran Rp 122.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nPURCHASE ORDER PO-445\nStok masuk gudang\nIndomie Goreng 4 dus Rp 480.000\nSabun Cuci 2 dus Rp 120.000\nTotal Rp 600.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nNOTA JUAL\nPelanggan: Ibu Siti\nBeras 2 kg Rp 26.000\nTelur 1 kg Rp 28.000\nTotal penjualan Rp 54.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nSTRUK PENJUALAN\nCustomer walk-in\nGula 1 kg Rp 15.000\nKopi Sachet 2 pack Rp 18.000\nTotal Rp 33.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nFAKTUR JUAL FJ-889\nKirim ke pelanggan\nMinyak 1 liter Rp 19.000\nTepung 2 kg Rp 19.000\nTotal Rp 38.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nNOTA BELI\nInvoice supplier\nMie Instan 5 karton Rp 550.000\nBumbu Masak 10 pcs Rp 45.000\nTotal Rp 595.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nNOTA PENJUALAN\nBarang keluar etalase\nSusu UHT 6 kotak Rp 54.000\nKerupuk 3 pack Rp 21.000\nTotal Rp 75.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nTANDA TERIMA\nPembelian stok\nGaram 5 kg Rp 25.000\nMerica 2 botol Rp 16.000\nTotal Rp 41.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO SEMBAKO MAKMUR\nNOTA JUAL HARIAN\nSale order SO-112\nBeras 10 kg Rp 130.000\nMinyak 3 liter Rp 57.000\nTotal Rp 187.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nNOTA PEMBELIAN BAHAN\nSupplier: Distributor Kopi\nBiji Kopi Arabika 5 kg Rp 450.000\nGula Aren 3 kg Rp 75.000\nSusu UHT 10 liter Rp 180.000\nTotal Rp 705.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nFAKTUR BELI\nStok masuk dapur\nCup Paper 500 pcs Rp 125.000\nSedotan 2 pack Rp 30.000\nTotal Rp 155.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nPURCHASE ORDER\nTerima barang supplier\nSyrup Vanilla 2 botol Rp 90.000\nTeh Celup 5 box Rp 65.000\nTotal Rp 155.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nNOTA PENJUALAN\nCustomer: Pak Budi\nKopi Susu 3 cup Rp 45.000\nRoti Bakar 2 pcs Rp 20.000\nTotal Rp 65.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nSTRUK JUAL\nWalk-in customer\nEspresso 2 cup Rp 30.000\nCroissant 1 pcs Rp 15.000\nTotal penjualan Rp 45.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nFAKTUR JUAL\nKirim catering\nKopi Americano 10 cup Rp 150.000\nSandwich 5 pcs Rp 75.000\nTotal Rp 225.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nNOTA BELI\nInvoice bahan baku\nMatcha Powder 1 kg Rp 280.000\nWhipped Cream 5 kaleng Rp 175.000\nTotal Rp 455.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nNOTA JUAL\nBarang keluar\nLatte 4 cup Rp 60.000\nBrownies 3 pcs Rp 36.000\nTotal Rp 96.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nTANDA TERIMA BARANG\nPembelian\nNapkin 10 pack Rp 50.000\nLid Cup 3 box Rp 45.000\nTotal Rp 95.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG KOPI SENJA\nSALE ORDER SO-77\nPenjualan harian\nCappuccino 6 cup Rp 90.000\nCookies 8 pcs Rp 48.000\nTotal Rp 138.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nNOTA PEMBELIAN\nSupplier: PT Semen Indonesia\nSemen Gresik 50 sak Rp 3.750.000\nPasir 2 truk Rp 1.200.000\nTotal Rp 4.950.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nFAKTUR BELI FB-2201\nStok masuk gudang\nCat Tembok 20 kaleng Rp 1.400.000\nKuas 50 pcs Rp 250.000\nTotal Rp 1.650.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nPURCHASE ORDER PO-88\nTerima dari distributor\nPaku 100 kg Rp 800.000\nBaut Mur 50 kg Rp 450.000\nTotal Rp 1.250.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nNOTA JUAL\nPelanggan: CV Mandiri\nSemen 10 sak Rp 750.000\nBata 500 pcs Rp 1.250.000\nTotal Rp 2.000.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nFAKTUR PENJUALAN\nCustomer: Pak Agus\nPipa PVC 20 batang Rp 600.000\nSambungan 30 pcs Rp 150.000\nTotal Rp 750.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nNOTA JUAL\nKirim ke proyek\nKeramik 2 dus Rp 480.000\nNat 5 sak Rp 175.000\nTotal Rp 655.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nNOTA BELI\nInvoice supplier\nBesi Beton 2 ton Rp 28.000.000\nKawat Bendrat 50 roll Rp 2.500.000\nTotal Rp 30.500.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nSTRUK PENJUALAN\nWalk-in\nCat Kayu 3 kaleng Rp 210.000\nAmplas 10 lembar Rp 50.000\nTotal Rp 260.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nTANDA TERIMA\nPembelian stok\nGenteng 200 pcs Rp 1.600.000\nReng 100 batang Rp 800.000\nTotal Rp 2.400.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN JAYA\nSALE ORDER\nPenjualan\nSemen 5 sak Rp 375.000\nPasir 1 truk Rp 600.000\nTotal Rp 975.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nNOTA BELI\nSupplier: CV Snack Nusantara\nChitato 5 dus Rp 350.000\nAqua 10 dus Rp 200.000\nTotal Rp 550.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nFAKTUR PEMBELIAN\nStok masuk\nRokok Surya 10 slop Rp 1.200.000\nPermen 20 pack Rp 80.000\nTotal Rp 1.280.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nPO-334 PURCHASE ORDER\nTerima barang\nSabun Mandi 3 dus Rp 180.000\nShampoo 2 dus Rp 160.000\nTotal Rp 340.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nNOTA JUAL\nPelanggan tetap\nIndomie 5 bungkus Rp 17.500\nTeh Botol 3 botol Rp 12.000\nTotal Rp 29.500",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nSTRUK JUAL\nCustomer walk-in\nSnack Chitato 2 bungkus Rp 10.000\nMinuman Teh 2 botol Rp 8.000\nTotal penjualan Rp 18.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nFAKTUR JUAL FJ-501\nKirim ke pelanggan\nBeras 5 kg Rp 65.000\nMinyak 2 liter Rp 38.000\nTotal Rp 103.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nNOTA PEMBELIAN\nInvoice distributor\nPampers 4 pack Rp 200.000\nTisu 10 pack Rp 100.000\nTotal Rp 300.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nNOTA PENJUALAN\nBarang keluar\nRokok 2 bungkus Rp 48.000\nKorek Api 1 box Rp 5.000\nTotal Rp 53.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nTANDA TERIMA BARANG\nPembelian\nBaterai AA 20 pack Rp 100.000\nLampu LED 10 pcs Rp 150.000\nTotal Rp 250.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO KELONTONG REZEKI\nNOTA JUAL HARIAN\nSale\nSabun 3 batang Rp 15.000\nPasta Gigi 2 tube Rp 24.000\nTotal Rp 39.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nNOTA PEMBELIAN SPAREPART\nSupplier: PT Astra Otoparts\nOli Mesin 20 liter Rp 800.000\nFilter Oli 10 pcs Rp 150.000\nBan Dalam 5 pcs Rp 175.000\nTotal Rp 1.125.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nFAKTUR BELI\nStok masuk bengkel\nKampas Rem 8 set Rp 320.000\nBusi 20 pcs Rp 200.000\nTotal Rp 520.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nPURCHASE ORDER PO-19\nTerima dari supplier\nAki Motor 5 unit Rp 1.250.000\nKabel Rem 10 roll Rp 300.000\nTotal Rp 1.550.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nNOTA JUAL SERVIS\nPelanggan: Pak Rudi\nGanti Oli + Filter Rp 85.000\nService Ringan Rp 50.000\nTotal Rp 135.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nFAKTUR PENJUALAN\nCustomer: Ibu Dewi\nGanti Ban Luar 1 pcs Rp 250.000\nBalance Rp 30.000\nTotal penjualan Rp 280.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nNOTA JUAL\nKirim sparepart\nKampas Rem 1 set Rp 45.000\nOli 1 liter Rp 40.000\nTotal Rp 85.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nNOTA BELI\nInvoice supplier\nVelg Motor 4 set Rp 2.000.000\nShockbreaker 6 pcs Rp 900.000\nTotal Rp 2.900.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nSTRUK PENJUALAN\nWalk-in\nGanti Busi 2 pcs Rp 20.000\nTune Up Rp 75.000\nTotal Rp 95.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nTANDA TERIMA\nPembelian stok\nKaca Spion 10 pcs Rp 200.000\nHandle Rem 5 set Rp 125.000\nTotal Rp 325.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL MOTOR PRIMA\nSALE ORDER SO-33\nPenjualan jasa + part\nService Besar Rp 350.000\nOli 2 liter Rp 80.000\nTotal Rp 430.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "TOKO REZEKI\nBUKTI PENERIMAAN BARANG\nDari supplier PT Maju\nBeras 10 kg\nTotal Rp 130.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TOKO REZEKI\nBUKTI PENGELUARAN BARANG\nKirim ke pelanggan\nGula 5 kg\nTotal Rp 75.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "WARUNG SENJA\nINVOICE INV-2025-88\nBiji Kopi 2 kg Rp 180.000\nTanpa keterangan jual/beli eksplisit",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "WARUNG SENJA\nSTRUK TRANSAKSI\nKopi Susu 5 cup Rp 75.000\nCustomer walk-in",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "BENGKEL PRIMA\nORDER OR-991\nOli Mesin 4 liter dari distributor\nTotal Rp 160.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "BENGKEL PRIMA\nORDER OR-992\nService + Oli 1 liter untuk pelanggan\nTotal Rp 95.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "TOKO BANGUNAN\nDOKUMEN INV-441\nSemen 5 sak\nPenerimaan gudang",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO BANGUNAN\nDOKUMEN INV-442\nSemen 2 sak\nProyek pelanggan Pak Joko",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "TOKO MAKMUR\nCATATAN STOK\nStok masuk: Minyak 3 liter, Tepung 2 kg",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TOKO MAKMUR\nCATATAN STOK\nStok keluar etalase: Beras 1 kg, Gula 1 kg",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "NOTA PEMBELIAN\nTgl 05/01/2025\nSupplier PT Maju\nProduk: Beras 20 kg\nHarga Rp 260.000\nStok masuk gudang",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "FAKTUR BELI No INV-9921\nTanda terima barang\nTerima dari distributor\nGula 10 kg Rp 145.000\nTotal pembayaran Rp 145.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "PURCHASE ORDER PO-771\nInvoice pembelian\nMinyak Goreng 5 liter Rp 95.000\nTepung 5 kg Rp 47.500",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "NOTA BELI TOKO\nSupplier: CV Makmur\nStok masuk\nIndomie 10 dus Rp 1.100.000\nKecap 5 botol Rp 45.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "TANDA TERIMA BARANG\nPembelian dari supplier\nSabun 5 dus Rp 300.000\nShampoo 3 dus Rp 240.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "INVOICE SUPPLIER\nBarang masuk inventory\nKopi 3 kg Rp 270.000\nGula Aren 2 kg Rp 50.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "NOTA PEMBELIAN BAHAN\nTerima stok\nCup 200 pcs Rp 50.000\nSedotan 5 pack Rp 75.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "FAKTUR BELI SEMEN\nPurchase dari pabrik\nSemen 20 sak Rp 1.500.000\nPasir 1 truk Rp 600.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "PO BARANG MASUK\nOrder ke supplier\nPaku 50 kg Rp 400.000\nBaut 30 kg Rp 270.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "NOTA BELI SPAREPART\nStok masuk bengkel\nOli 10 liter Rp 400.000\nFilter 5 pcs Rp 75.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "INVOICE PEMBELIAN\nSupplier terpercaya\nChitato 3 dus Rp 210.000\nAqua 5 dus Rp 100.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "NOTA TERIMA BARANG\nPembelian rutin\nRokok 5 slop Rp 600.000\nPermen 10 pack Rp 40.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "FAKTUR BELI HARIAN\nStok masuk toko\nBaterai 5 pack Rp 25.000\nLampu 3 pcs Rp 45.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "PURCHASE ORDER\nTerima dari vendor\nPampers 2 pack Rp 100.000\nTisu 5 pack Rp 50.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "NOTA PEMBELIAN\nBarang masuk\nVelg 2 set Rp 1.000.000\nBan 4 pcs Rp 800.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "INVOICE BELI\nSupplier otomotif\nAki 3 unit Rp 750.000\nBusi 10 pcs Rp 100.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "TANDA TERIMA\nPembelian material\nCat 10 kaleng Rp 700.000\nKuas 20 pcs Rp 100.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "NOTA BELI GROSIR\nStok masuk gudang\nBeras 50 kg Rp 650.000\nMinyak 10 liter Rp 190.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "FAKTUR PEMBELIAN\nOrder supplier\nKeramik 1 dus Rp 240.000\nNat 2 sak Rp 70.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "PO STOK MASUK\nTerima barang\nKampas Rem 4 set Rp 160.000\nKabel 5 roll Rp 150.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "NOTA BELI DISTRIBUTOR\nInvoice masuk\nMatcha 500 gr Rp 140.000\nSyrup 1 botol Rp 45.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "PEMBELIAN STOK\nSupplier kopi\nBiji Kopi 3 kg Rp 270.000\nSusu 5 liter Rp 90.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "INVOICE MASUK\nTerima dari PT\nGenteng 100 pcs Rp 800.000\nReng 50 batang Rp 400.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "NOTA PEMBELIAN SPAREPART\nStok bengkel masuk\nShockbreaker 3 pcs Rp 450.000\nKaca Spion 5 pcs Rp 100.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "FAKTUR BELI TOKO\nBarang masuk etalase\nSnack 10 dus Rp 700.000\nMinuman 8 dus Rp 480.000",
+      "jenis": "barang_masuk",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "NOTA JUAL\nPelanggan: Bapak Joko\nProduk: Gula 2 kg Rp 30.000\nPenjualan harian",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "FAKTUR PENJUALAN FJ-112\nCustomer walk-in\nBeras 3 kg Rp 39.000\nTotal Rp 39.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "STRUK JUAL\nBarang keluar\nMinyak 1 liter Rp 19.000\nTepung 1 kg Rp 9.500",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "NOTA PENJUALAN\nKirim ke pelanggan\nIndomie 3 bungkus Rp 10.500\nKecap 1 botol Rp 9.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "SALE ORDER SO-445\nPenjualan\nKopi Susu 2 cup Rp 30.000\nRoti 1 pcs Rp 10.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "FAKTUR JUAL\nCustomer: Ibu Ani\nLatte 3 cup Rp 45.000\nCookies 2 pcs Rp 12.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "NOTA JUAL HARIAN\nBarang keluar toko\nSemen 2 sak Rp 150.000\nBata 100 pcs Rp 250.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "STRUK PENJUALAN\nWalk-in customer\nCat 1 kaleng Rp 70.000\nAmplas 3 lembar Rp 15.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "NOTA PENJUALAN\nKirim proyek\nPipa PVC 5 batang Rp 150.000\nSambungan 10 pcs Rp 50.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "FAKTUR JUAL\nPelanggan tetap\nChitato 1 bungkus Rp 5.000\nAqua 1 botol Rp 4.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "NOTA JUAL TOKO\nPenjualan\nRokok 1 bungkus Rp 24.000\nPermen 1 pack Rp 4.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "STRUK JUAL\nCustomer\nSabun 1 batang Rp 5.000\nPasta Gigi 1 tube Rp 12.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "NOTA PENJUALAN\nBarang keluar\nGanti Oli Rp 65.000\nService Rp 35.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "FAKTUR JUAL BENGKEL\nCustomer: Pak Toni\nGanti Ban Rp 200.000\nBalance Rp 25.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "NOTA JUAL SERVIS\nPenjualan jasa\nTune Up Rp 75.000\nBusi 1 pcs Rp 10.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "SALE ORDER\nKirim sparepart\nKampas Rem 1 set Rp 45.000\nOli 1 liter Rp 40.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "NOTA JUAL\nPelanggan\nKeramik 5 pcs Rp 60.000\nNat 1 sak Rp 35.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "STRUK PENJUALAN\nWalk-in\nGenteng 10 pcs Rp 80.000\nSemen 1 sak Rp 75.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "NOTA PENJUALAN HARIAN\nBarang keluar\nBeras 1 kg Rp 13.000\nTelur 0.5 kg Rp 14.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "FAKTUR JUAL\nCustomer catering\nKopi 10 cup Rp 150.000\nSandwich 3 pcs Rp 45.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    },
+    {
+      "text": "NOTA JUAL\nPenjualan toko\nMinyak 2 liter Rp 38.000\nGula 1 kg Rp 15.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_sembako"
+    },
+    {
+      "text": "STRUK JUAL HARIAN\nWalk-in\nEspresso 1 cup Rp 15.000\nCroissant 1 pcs Rp 15.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kopi"
+    },
+    {
+      "text": "NOTA PENJUALAN\nKirim pelanggan\nPaku 2 kg Rp 16.000\nBaut 1 kg Rp 9.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bangunan"
+    },
+    {
+      "text": "FAKTUR JUAL\nCustomer bengkel\nVelg 1 set Rp 500.000\nBan 1 pcs Rp 200.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_kelontong"
+    },
+    {
+      "text": "NOTA JUAL TOKO KELONTONG\nPenjualan\nBaterai 1 pack Rp 5.000\nLampu 1 pcs Rp 15.000",
+      "jenis": "barang_keluar",
+      "umkm_id": "umkm_bengkel"
+    }
+  ]
+}
