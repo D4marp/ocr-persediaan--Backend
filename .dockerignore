@@ -1,5 +1,5 @@
 python/.venv
-python/models/*.pkl
 uploads/
 *.pyc
 __pycache__/
+python/data/raw_notas/

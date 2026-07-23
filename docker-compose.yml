@@ -33,7 +33,6 @@ services:
       DB_NAME: persediaan_db
     volumes:
       - uploads:/app/uploads
-      - mlmodels:/app/python/models
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 10s
@@ -58,5 +57,4 @@ services:
 
 volumes:
   mysqldata:
-  mlmodels:
   uploads:
