@@ -1,8 +1,10 @@
 package main
 
 import (
+	"database/sql"
 	"log"
 	"os"
+	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
@@ -10,20 +12,34 @@ import (
 	"github.com/ocr-persediaan/backend/pkg/db"
 )
 
+func connectWithRetry(cfg db.Config, attempts int, delay time.Duration) (*sql.DB, error) {
+	var lastErr error
+	for i := 1; i <= attempts; i++ {
+		pool, err := db.NewMySQLPool(cfg)
+		if err == nil {
+			return pool, nil
+		}
+		lastErr = err
+		log.Printf("DB connection attempt %d/%d failed: %v", i, attempts, err)
+		time.Sleep(delay)
+	}
+	return nil, lastErr
+}
+
 func main() {
 	if err := godotenv.Load(); err != nil {
 		log.Println("No .env file, using environment variables")
 	}
 
-	pool, err := db.NewMySQLPool(db.Config{
+	pool, err := connectWithRetry(db.Config{
 		Host:     os.Getenv("DB_HOST"),
 		Port:     os.Getenv("DB_PORT"),
 		User:     os.Getenv("DB_USER"),
 		Password: os.Getenv("DB_PASSWORD"),
 		Name:     os.Getenv("DB_NAME"),
-	})
+	}, 10, 2*time.Second)
 	if err != nil {
-		log.Fatalf("DB connection failed: %v", err)
+		log.Fatalf("DB connection failed after retries: %v", err)
 	}
 	defer pool.Close()
 
